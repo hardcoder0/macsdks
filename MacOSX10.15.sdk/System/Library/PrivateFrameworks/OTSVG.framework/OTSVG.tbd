@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           001E5E8C-1DC0-3A6E-BDE4-1B7887E47F76
+  - target:          x86_64-maccatalyst
+    value:           001E5E8C-1DC0-3A6E-BDE4-1B7887E47F76
+install-name:    '/System/Library/PrivateFrameworks/OTSVG.framework/Versions/A/OTSVG'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _OTSVGDocumentCreate, _OTSVGDocumentCreateWithData, _OTSVGDocumentEnumerateIDs, 
+                       _OTSVGDocumentGetIntrinsicRect, _OTSVGDocumentRelease, _OTSVGGlyphRecordingCreate, 
+                       _OTSVGGlyphRecordingCreateFromDocument, _OTSVGGlyphRecordingCreateFromID, 
+                       _OTSVGGlyphRecordingGetBoundingRect, _OTSVGGlyphRecordingPlayback, 
+                       _OTSVGGlyphRecordingPlaybackRecordingsAtPositions, _OTSVGGlyphRecordingRelease, 
+                       _OTSVGTableCreateFromData, _OTSVGTableGetDocumentIndexForGlyph, 
+                       _OTSVGTableRelease ]
+...

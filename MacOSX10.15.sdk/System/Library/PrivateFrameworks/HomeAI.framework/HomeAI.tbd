@@ -1,0 +1,8 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           203510D0-FA6C-3F5D-B436-DCE7C870037A
+install-name:    '/System/Library/PrivateFrameworks/HomeAI.framework/Versions/A/HomeAI'
+...

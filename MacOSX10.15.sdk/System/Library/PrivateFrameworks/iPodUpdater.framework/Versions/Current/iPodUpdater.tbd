@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           23E03EFF-0148-3F03-BD94-FBD308501B59
+install-name:    '/System/Library/PrivateFrameworks/iPodUpdater.framework/Versions/A/iPodUpdater'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _VVVCreatePodController, _VVVCreatePodWithID, _VVVDeletePod, 
+                       _VVVDeletePodController, _VVVGetBreadCrumb, _VVVGetCompletionInstructions, 
+                       _VVVGetNumberOfBreadCrumbs, _VVVGetPodUpdaterLibraryVersion, 
+                       _VVVGetProgress, _VVVRestorePod, _VVVSetLogVerbosity, _VVVShouldAllowRestore, 
+                       _VVVShouldAllowUpdate, _VVVUpdatePod ]
+...

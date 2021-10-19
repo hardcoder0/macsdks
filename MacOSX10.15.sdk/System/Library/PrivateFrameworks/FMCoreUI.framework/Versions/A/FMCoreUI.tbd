@@ -1,0 +1,11 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           EFF4D8D9-9214-33C3-841F-109C6CC692EB
+install-name:    '/System/Library/PrivateFrameworks/FMCoreUI.framework/Versions/A/FMCoreUI'
+exports:
+  - targets:         [ x86_64-macos ]
+    objc-classes:    [ FMAnnotationView ]
+...

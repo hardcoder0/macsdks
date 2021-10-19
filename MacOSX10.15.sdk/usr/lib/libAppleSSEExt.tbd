@@ -1,0 +1,8 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           88CB2144-7BBA-3285-AD37-7F5D928C2F29
+install-name:    '/usr/lib/libAppleSSEExt.dylib'
+...

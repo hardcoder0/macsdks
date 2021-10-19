@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           A645A92F-CAF9-3B72-B123-9DE970D4E03D
+  - target:          x86_64-maccatalyst
+    value:           A645A92F-CAF9-3B72-B123-9DE970D4E03D
+install-name:    '/System/Library/PrivateFrameworks/SPFinder.framework/Versions/A/SPFinder'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _SPFinderStateChangedNotification ]
+    objc-classes:    [ SPAdvertisement, SPAdvertisementCache, SPAdvertisementCacheSearchCriteria, 
+                       SPAdvertisementCacheSearchResult, SPBeaconAdvertisement, SPBeaconPayload, 
+                       SPBeaconPayloadCacheSearchCriteria, SPBeaconPayloadCacheSearchResult, 
+                       SPEstimatedLocation, SPFinderInterface, SPFinderStateInfo, 
+                       SPFinderStateManager, SPScheduler, SPSchedulerInformation, 
+                       SPSearchResultMarker ]
+...

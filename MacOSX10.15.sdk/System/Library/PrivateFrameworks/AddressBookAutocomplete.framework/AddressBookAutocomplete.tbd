@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           5EE3AABD-0468-37AD-9DC9-F5FE9B48523E
+  - target:          x86_64-maccatalyst
+    value:           5EE3AABD-0468-37AD-9DC9-F5FE9B48523E
+install-name:    '/System/Library/PrivateFrameworks/AddressBookAutocomplete.framework/Versions/A/AddressBookAutocomplete'
+current-version: 2421.27
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    objc-classes:    [ ABAutocompleteContactPredicate, ABAutocompleteLocalContactResultTransformBuilder, 
+                       ABAutocompleteLocalContactResultTransformer, ABAutocompleteLocalQuery, 
+                       ABAutocompleteLocalQueryContactStrategy, ABAutocompleteLocalQueryGroupsStrategy, 
+                       ABAutocompleteLocalSearch, ABAutocompleteLocalSearchObservable, 
+                       ABAutocompleteLocalSmartGroupsQuery, ABAutocompleteServerSearch, 
+                       ABAutocompleteServerSearchObservable, CNAutocompleteContactFetchPredicateFactory, 
+                       CNAutocompleteContactFilterPredicateFactory, CNAutocompleteContactPredicateFactory ]
+    objc-ivars:      [ ABAutocompleteLocalQuery._cancelationToken, ABAutocompleteLocalQuery._contactStore, 
+                       ABAutocompleteLocalQuery._request, ABAutocompleteLocalQuery._strategy ]
+...

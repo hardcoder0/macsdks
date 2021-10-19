@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           1A537D56-9FF1-3AD8-B405-9BB4E372962F
+install-name:    '/usr/lib/libnfstorage.dylib'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _nfstorageVersionNumber, _nfstorageVersionString ]
+    objc-classes:    [ ExpressESEEntity, ExpressIcfEntity, NFStorageController, NFStorageControllerESEExpress, 
+                       NFStorageControllerIcfExpress, PurpleTrustAppletEntity, PurpleTrustClientEntity, 
+                       PurpleTrustKeyEntity ]
+...

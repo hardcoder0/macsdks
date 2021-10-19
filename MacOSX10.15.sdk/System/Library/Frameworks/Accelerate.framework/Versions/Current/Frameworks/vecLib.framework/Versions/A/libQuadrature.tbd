@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           371F36A7-B12F-363E-8955-F24F7C2048F6
+  - target:          x86_64-maccatalyst
+    value:           371F36A7-B12F-363E-8955-F24F7C2048F6
+install-name:    '/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libQuadrature.dylib'
+allowable-clients:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    clients:         [ vecLib ]
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _quadrature_integrate ]
+...

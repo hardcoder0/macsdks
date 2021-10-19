@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           9965351F-21FD-3477-B478-8ABAA0DB513A
+  - target:          x86_64-maccatalyst
+    value:           9965351F-21FD-3477-B478-8ABAA0DB513A
+install-name:    '/System/Library/PrivateFrameworks/FileProviderDaemon.framework/Versions/A/FileProviderDaemon'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _FPDAppStoreServiceName, _FPDAppStoreServiceXPCInterface ]
+    objc-classes:    [ FPDAccessControlStore, FPDActionOperation, FPDActionOperationQueue, 
+                       FPDAppMonitor, FPDDomain, FPDDomainExtensionBackend, FPDDomainIndexer, 
+                       FPDDownloadOperation, FPDDownloader, FPDExtension, FPDFetchAppLibraryIconOperation, 
+                       FPDMoveAtom, FPDMoveOperation, FPDMoveReader, FPDMoveWriter, 
+                       FPDProcessMonitor, FPDProvider, FPDProviderDescriptor, FPDRequest, 
+                       FPDServer ]
+...

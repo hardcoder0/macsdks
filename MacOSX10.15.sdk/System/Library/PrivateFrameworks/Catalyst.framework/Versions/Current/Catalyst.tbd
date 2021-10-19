@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           FC0822C4-C234-3543-9F47-3C0496E25A52
+  - target:          x86_64-maccatalyst
+    value:           FC0822C4-C234-3543-9F47-3C0496E25A52
+install-name:    '/System/Library/PrivateFrameworks/Catalyst.framework/Versions/A/Catalyst'
+current-version: 6.1
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _CATAssertIsNotQueue, _CATAssertIsQueue, _CATErrorDomain, 
+                       _CATErrorWithCodeAndUserInfo, _CATErrorWithDomainCodeAndUserInfo, 
+                       _CATFormattedStringForKey, _CATGetCatalystQueue, _CATLocalizedKey, 
+                       _CATSetCatalystQueue, _CATUnlocalizedKey ]
+    objc-classes:    [ CATAddress, CATArbitrator, CATBatchRemoteTaskOperation, CATBlockOperationObserver, 
+                       CATCollectionController, CATEndPoint, CATMessage, CATMutableTaskProgress, 
+                       CATNetworkReachability, CATNotificationMessage, CATOperation, 
+                       CATOperationQueue, CATProperty, CATRemoteConnection, CATRemoteConnectionSocketOptions, 
+                       CATRemoteConnectionTrustDecision, CATRemoteTaskOperation, 
+                       CATRemoteTransport, CATSerialOperationQueue, CATSessionMessage, 
+                       CATSessionMessageDidInvalidate, CATSessionMessageInvalidate, 
+                       CATSessionMessageResume, CATSessionMessageResumed, CATSocket, 
+                       CATState, CATStateMachine, CATStateMachineEvent, CATTaskBlockServer, 
+                       CATTaskClient, CATTaskMessage, CATTaskMessageCancel, CATTaskMessageError, 
+                       CATTaskMessageFetchProgress, CATTaskMessageIncrementalProgress, 
+                       CATTaskMessageProgressUpdate, CATTaskMessageStart, CATTaskOperation, 
+                       CATTaskProgress, CATTaskRequest, CATTaskResultObject, CATTaskServer, 
+                       CATTaskSession, CATTransition, CATTransport, CATXPCTransport ]
+...

@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           FA6E7046-5CC4-30A7-BACC-C7ADD7056FFD
+install-name:    '/System/Library/PrivateFrameworks/AMPSharing.framework/Versions/A/AMPSharing'
+exports:
+  - targets:         [ x86_64-macos ]
+    objc-classes:    [ AMPSHomeSharingPrefs, AMPSPhotoSharingPrefs, AMPSPlaylistSharingPrefs, 
+                       AMPSPublicSharingPrefs, AMPSSharingPrefs ]
+...

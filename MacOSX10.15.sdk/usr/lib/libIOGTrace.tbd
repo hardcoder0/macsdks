@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           D24B4679-5DD8-30D1-A034-A36B72485180
+install-name:    '/usr/lib/libIOGTrace.dylib'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _createGTrace, _destroyGTrace, _formatToken, _getBreadcrumbBase, 
+                       _getBufferID, _recordToken, _recordTokenNT, _recordTokenNow, 
+                       _recordTokenNowNT ]
+...

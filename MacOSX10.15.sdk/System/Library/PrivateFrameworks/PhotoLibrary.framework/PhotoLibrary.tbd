@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           15AD4C26-7016-3302-A122-036A0C86EA5F
+install-name:    '/System/Library/PrivateFrameworks/PhotoLibrary.framework/Versions/A/PhotoLibrary'
+current-version: 161.0.120
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _PHLIngestAssetMetadataPropertyKey, _PHLIngestAssetURLDataKey, 
+                       _PHLIngestRequestMetadataCreationDateKey, _PHLIngestRequestMetadataPlaybackVariationKey, 
+                       _PHLIngestRequestMetadataVideoComplDurationKey, _PHLIngestRequestMetadataVideoComplImageDisplayKey, 
+                       _PHLIngestRequestMetadataVideoComplMediaGroupIdKey, _PHLIngestRequestMetadataVideoComplPixelHeightKey, 
+                       _PHLIngestRequestMetadataVideoComplPixelWidthKey, _kPHLErrorDomain_Ingest, 
+                       _kPHLLogDomain_Ingest ]
+    objc-classes:    [ PHImageManagerSettings, PHLIngestAdjustment, PHLIngestAsset, 
+                       PHLIngestController, PHLIngestRequest, PHLMutableIngestRequest, 
+                       PHResourceDownloadSettings, PHRootSettings, PHSettings ]
+...

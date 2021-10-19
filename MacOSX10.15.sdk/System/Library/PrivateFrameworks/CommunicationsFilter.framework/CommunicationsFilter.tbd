@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           C32767B2-2703-3A2E-B1A5-E3C571F6BE2F
+  - target:          x86_64-maccatalyst
+    value:           C32767B2-2703-3A2E-B1A5-E3C571F6BE2F
+install-name:    '/System/Library/PrivateFrameworks/CommunicationsFilter.framework/Versions/A/CommunicationsFilter'
+current-version: 800
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _CMFAgentName, _CMFBlockListAddItemForAllServices, _CMFBlockListCopyItemsForAllServicesService, 
+                       _CMFBlockListIsItemBlocked, _CMFBlockListRemoveItemFromAllServices, 
+                       _CMFBlockListUpdatedNotification, _CMFDictionaryResultKey, 
+                       _CMFItemCopyEmailAddress, _CMFItemCopyPhoneNumber, _CMFItemCreateWithEmailAddress, 
+                       _CMFItemCreateWithPhoneNumber, _CMFItemGetType, _CMFSyncAgentBlockListUpdated, 
+                       _CMFXPCEventCode, _CMFXPCParameterKeyItem, _CMFXPCResponseKey, 
+                       _CreateCMFItemFromString ]
+    objc-classes:    [ CommunicationFilterItem ]
+...

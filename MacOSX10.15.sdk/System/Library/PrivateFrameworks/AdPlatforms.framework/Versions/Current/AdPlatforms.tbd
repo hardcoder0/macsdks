@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           460DDDEE-EA88-3C7F-ABFB-E8E0E0469CDD
+  - target:          x86_64-maccatalyst
+    value:           460DDDEE-EA88-3C7F-ABFB-E8E0E0469CDD
+install-name:    '/System/Library/PrivateFrameworks/AdPlatforms.framework/Versions/A/AdPlatforms'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _AdPlatformsVersionNumber, _AdPlatformsVersionString ]
+    objc-classes:    [ ADAttribution, ADStatusConditionRateLimitedObject, ADStatusConditions, 
+                       ADStatusConditionsImpl ]
+...

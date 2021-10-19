@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           20C71EA5-8CA9-3013-A6C6-533023EF4406
+  - target:          x86_64-maccatalyst
+    value:           20C71EA5-8CA9-3013-A6C6-533023EF4406
+install-name:    '/System/Library/PrivateFrameworks/MTLSimImplementation.framework/Versions/A/MTLSimImplementation'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _init_with_xpc_connection ]
+...

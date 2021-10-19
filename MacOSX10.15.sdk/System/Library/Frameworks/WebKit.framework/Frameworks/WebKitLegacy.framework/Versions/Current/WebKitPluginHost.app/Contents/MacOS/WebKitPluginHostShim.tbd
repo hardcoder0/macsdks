@@ -1,0 +1,11 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           F9E5C594-F1C9-3E3A-8AF9-9597B9754A95
+install-name:    '/usr/local/lib/WebKitPluginHostShim.dylib'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _WebKitPluginHostShimInitialize ]
+...

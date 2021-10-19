@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           13A6D14E-F00B-341D-8975-119C3211D4E7
+install-name:    '/System/Library/Frameworks/AuthenticationServices.framework/Versions/A/AuthenticationServices'
+current-version: 609.3.5
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _ASAuthorizationAppleIDProviderCredentialRevokedNotification, 
+                       _ASAuthorizationErrorDomain, _ASAuthorizationOperationImplicit, 
+                       _ASAuthorizationOperationLogin, _ASAuthorizationOperationLogout, 
+                       _ASAuthorizationOperationRefresh, _ASAuthorizationScopeEmail, 
+                       _ASAuthorizationScopeFullName, _ASWebAuthenticationSessionErrorDomain, 
+                       _ASWebAuthenticationSessionWebBrowserSupportCapabilitiesKey, 
+                       _ASWebAuthenticationSessionWebBrowserSupportCapabilityIsSupportedKey, 
+                       _ASWebAuthenticationSessionWebBrowserSupportCapabilitySupportsEphemeralBrowserSessionKey, 
+                       __authenticationSessionRequestServerErrorDomain ]
+    objc-classes:    [ ASAuthorization, ASAuthorizationAppleIDButton, ASAuthorizationAppleIDCredential, 
+                       ASAuthorizationAppleIDProvider, ASAuthorizationAppleIDRequest, 
+                       ASAuthorizationController, ASAuthorizationOpenIDRequest, ASAuthorizationPasswordProvider, 
+                       ASAuthorizationPasswordRequest, ASAuthorizationProviderExtensionAuthorizationRequest, 
+                       ASAuthorizationRequest, ASAuthorizationSingleSignOnCredential, 
+                       ASAuthorizationSingleSignOnProvider, ASAuthorizationSingleSignOnRequest, 
+                       ASPasswordCredential, ASWebAuthenticationSession, ASWebAuthenticationSessionController, 
+                       ASWebAuthenticationSessionLaunchAgentProxy, ASWebAuthenticationSessionRequest, 
+                       ASWebAuthenticationSessionRequestClient, ASWebAuthenticationSessionWebBrowserSessionManager, 
+                       _ASIncomingCallObserver, _ASWebAuthenticationSessionRequestServer ]
+...

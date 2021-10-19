@@ -1,0 +1,11 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           C3682AD9-99C1-36A1-8309-9E53C744EC05
+install-name:    '/System/Library/PrivateFrameworks/FindMyDeviceUI.framework/Versions/A/FindMyDeviceUI'
+exports:
+  - targets:         [ x86_64-macos ]
+    objc-classes:    [ FMDUIFMMController, FMDUIFMMiCloudSettingsController ]
+...

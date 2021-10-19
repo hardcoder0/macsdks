@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           3B9ACF8E-8507-35DD-9252-051B8CC1D212
+  - target:          x86_64-maccatalyst
+    value:           3B9ACF8E-8507-35DD-9252-051B8CC1D212
+install-name:    '/System/Library/PrivateFrameworks/AACCore.framework/Versions/A/AACCore'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _AEAssessmentStateDidChangeNotificationName, _AEAssessmentStatePublisherRegisteringMachServiceName, 
+                       _AECoreError, _AECoreErrorDomain, _AECoreErrorUserInfo, _AELocalizedStringFromTableInBundle, 
+                       _AEPolicySessionFailedToActivateSubsystemsKey, _AEPolicySessionFailedToDeactivateSubsystemsKey ]
+    objc-classes:    [ AEActivePolicySession, AEAssessmentModeGestalt, AEAssessmentState, 
+                       AEAssessmentStatePublishingProxy, AEAssessmentStatePublishingXPCInterfaceFactory, 
+                       AEAssessmentStateSourceRegisteringProxy, AEAssessmentStateSourceRegisteringXPCInterfaceFactory, 
+                       AEFileSystem, AELifetimeProvidingProxy, AELifetimeProvidingXPCInterfaceFactory, 
+                       AELocalizedErrorDescriptions, AEOSGestalt, AEPerformancePrimitivesProvider, 
+                       AEPolicyBundle, AEPreferencesProvider, AERScreenPrimitivesProvider, 
+                       AERWindowPrimitivesProvider, AERWindowSpacePrimitivesProvider ]
+...

@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           F17A232D-8A39-3A15-801E-13457D2A7AFE
+install-name:    '/System/Library/PrivateFrameworks/CoreCDPUI.framework/Versions/A/CoreCDPUI'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _CoreCDPUIVersionNumber, _CoreCDPUIVersionString, __CDPLogSystem, 
+                       __CDPSignpostCreate, __CDPSignpostGetNanoseconds, __CDPSignpostLogSystem, 
+                       _kiCDPLocalizedAlertMessageKey, _kiCDPLocalizedAlertTitleKey ]
+    objc-classes:    [ CDPEnrollViewController, CDPOption, CDPPrintBorderView, CDPRecoveryKeyPrintController, 
+                       CDPRecoveryKeySheetBaseController, CDPRecoveryKeySheetController, 
+                       CDPStateBaseUIController, CDPStateUIController, CDPStateiCloudPrefUIController, 
+                       CDPTrustedDeviceViewItem, CDPUIDeviceToDeviceEncryptionCancelCreateViewModel, 
+                       CDPUIDeviceToDeviceEncryptionFlowContext, CDPUIDeviceToDeviceEncryptionHelper, 
+                       CDPUIDeviceToDeviceEncryptionIneligibilityAlertViewModel, 
+                       CDPUIDeviceToDeviceEncryptionMessagingViewModel, CDPUIDeviceToDeviceEncryptionUIProviderImp, 
+                       CDPUIDeviceToDeviceEncryptionUpgradeMessageViewModel, CDPiCloudPrefRecoveryKeyController, 
+                       iCDPEnrollDevice ]
+...

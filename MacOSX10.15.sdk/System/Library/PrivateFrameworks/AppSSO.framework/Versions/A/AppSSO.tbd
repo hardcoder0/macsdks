@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           660152F4-68DE-3909-AE65-EC6EFAACB44C
+  - target:          x86_64-maccatalyst
+    value:           660152F4-68DE-3909-AE65-EC6EFAACB44C
+install-name:    '/System/Library/PrivateFrameworks/AppSSO.framework/Versions/A/AppSSO'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _SOAuthorizationOptionInitiatingAction, _SOAuthorizationOptionInitiatorOrigin, 
+                       _SOAuthorizationOptionUserActionInitiated, _SODebugConfigurationKeyAssociatedDomainsValidated, 
+                       _SODebugConfigurationKeyConfig, _SODebugConfigurationKeyPlugins, 
+                       _SODebugConfigurationKeyRealms, _SODebugConfigurationKeyRequestQueue, 
+                       _SODebugConfigurationKeyServerConfigVersion, _SODebugConfigurationKeySignatureValidated, 
+                       _SOErrorDomain, _SOErrorSubcodeKey, _SONotificationExtensionsChanged, 
+                       _appSSO_handleResponse, _appSSO_handleResponseCredential, 
+                       _appSSO_init, _appSSO_performResponse, _appSSO_performResponseCredential, 
+                       _appSSO_willHandle, _appSSO_willPerform ]
+    objc-classes:    [ SOAuthorization, SOAuthorizationCredential, SOAuthorizationHints, 
+                       SOAuthorizationParameters, SOAuthorizationRequest, SOAuthorizationRequestParameters, 
+                       SOConfigurationHost, SOConfigurationManager, SODebugHints, 
+                       SOExtension, SOExtensionManager, SOPreferences, SORequestQueue, 
+                       SORequestQueueItem ]
+...

@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           F25AF002-525C-3B03-8E17-5313FC47D653
+  - target:          x86_64-maccatalyst
+    value:           F25AF002-525C-3B03-8E17-5313FC47D653
+install-name:    '/System/Library/PrivateFrameworks/ContactsDonationFeedback.framework/Versions/A/ContactsDonationFeedback'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _ContactsDonationFeedbackVersionNumber, _ContactsDonationFeedbackVersionString, 
+                       _kCDFErrorDomain, _kCDFInsufficientValuesToHashError, _kCDFMissingIdentifierError, 
+                       _kCDFUnhandledValueTypeError ]
+    objc-classes:    [ CDFDonationFeedbackStore, CNDFDonationStringCollector ]
+...

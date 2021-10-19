@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           EE2A8CE4-B1C2-30CC-843F-F679012FFF10
+install-name:    '/System/Library/PrivateFrameworks/SystemDesktopAppearance.framework/Versions/A/SystemDesktopAppearance'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ x86_64-macos ]
+    objc-classes:    [ SystemDesktopAppearance ]
+...

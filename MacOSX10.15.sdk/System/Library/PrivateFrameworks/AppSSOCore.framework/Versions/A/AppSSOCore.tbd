@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           3FBA882A-83BF-3163-916F-0D7FA17D010D
+  - target:          x86_64-maccatalyst
+    value:           3FBA882A-83BF-3163-916F-0D7FA17D010D
+install-name:    '/System/Library/PrivateFrameworks/AppSSOCore.framework/Versions/A/AppSSOCore'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _SOAuthorizationOptionCoreNoUserInterface, _SOErrorDomain, 
+                       _SOErrorSubcodeKey, _appSSO_handleResponse, _appSSO_handleResponseCredential, 
+                       _appSSO_init, _appSSO_performResponse, _appSSO_performResponseCredential, 
+                       _appSSO_willHandle, _appSSO_willPerform ]
+    objc-classes:    [ SOAuthorizationCore, SOAuthorizationCredentialCore, SOAuthorizationHintsCore, 
+                       SOAuthorizationParametersCore, SOAuthorizationRequestParametersCore, 
+                       SOConfiguration, SOConfigurationClient, SOConfigurationVersion, 
+                       SOErrorHelper, SOFullProfile, SOInternalProtocols, SOServiceConnection, 
+                       SOUtils ]
+...

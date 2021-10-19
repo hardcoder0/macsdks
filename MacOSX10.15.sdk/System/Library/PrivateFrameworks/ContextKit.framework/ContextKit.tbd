@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           8BFD475E-376A-3F99-8E17-9994838E8837
+  - target:          x86_64-maccatalyst
+    value:           8BFD475E-376A-3F99-8E17-9994838E8837
+install-name:    '/System/Library/PrivateFrameworks/ContextKit.framework/Versions/A/ContextKit'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _CKContextKitNotification_ConfigurationUpdate, _ContextKitErrorDomain, 
+                       _ContextKitVersionNumber, _ContextKitVersionString ]
+    objc-classes:    [ CKContextClient, CKContextCompleter, CKContextCountedItem, 
+                       CKContextGlobals, CKContextRequest, CKContextResponse, CKContextResult, 
+                       CKContextSemaphore ]
+...

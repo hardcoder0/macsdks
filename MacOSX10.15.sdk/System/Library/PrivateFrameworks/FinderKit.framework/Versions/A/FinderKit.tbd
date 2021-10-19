@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           56547C0A-8C78-329B-9E5D-565CD7AD1ADB
+install-name:    '/System/Library/PrivateFrameworks/FinderKit.framework/Versions/A/FinderKit'
+current-version: 0
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _FITagEditorDidEndEditingNotification, __FIAddNewTagsToSidebar, 
+                       __FISetTagsForURL, __FITagCirclesImage, __FITagNamesFromTags, 
+                       __FITagsForURL, __FITagsFromTagNames ]
+    objc-classes:    [ FIAirDropView, FIFinderView, FIIconHeaderView, FIIconView, 
+                       FILocationPopUp, FITagEditorView, _FIBrowseBySizeView ]
+...

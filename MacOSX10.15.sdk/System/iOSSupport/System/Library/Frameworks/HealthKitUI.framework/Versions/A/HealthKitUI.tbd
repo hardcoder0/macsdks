@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-maccatalyst
+    value:           EF0F766D-DAA8-3712-A151-3C41D026ED84
+install-name:    '/System/iOSSupport/System/Library/Frameworks/HealthKitUI.framework/Versions/A/HealthKitUI'
+exports:
+  - targets:         [ x86_64-maccatalyst ]
+    symbols:         [ _HKHealthKitUIFrameworkBundle, _HKScrollPerformanceOptionCategoryKey ]
+    objc-classes:    [ HKActivityRingView ]
+...

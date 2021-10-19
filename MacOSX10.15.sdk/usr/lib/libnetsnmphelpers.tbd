@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           8DEC5A5E-5B75-3EFA-9EE1-DAB2376D0C28
+install-name:    '/usr/lib/libnetsnmphelpers.25.dylib'
+current-version: 26.2
+compatibility-version: 26
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _netsnmp_helpers_dummy_text ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           D5A2BD0E-25D1-39C1-A46F-02609000562A
+  - target:          x86_64-maccatalyst
+    value:           D5A2BD0E-25D1-39C1-A46F-02609000562A
+install-name:    '/usr/lib/libsysdiagnose.dylib'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _metricCompression, _metricGetLogCopying, _metricGetLogGeneration, 
+                       _metricGetOSLogArchive, _metricGetTimeSensitive, _metricLogCopying, 
+                       _metricLogGeneration, _metricOSLogarchiveGeneration, _metricStartToTar, 
+                       _metricTimeSensitive, _metricTotalSize, _sdProgressPercent, 
+                       _sdProgressPhase ]
+    objc-classes:    [ Libsysdiagnose ]
+...

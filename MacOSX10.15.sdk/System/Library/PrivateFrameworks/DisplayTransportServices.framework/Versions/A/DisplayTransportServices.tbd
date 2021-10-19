@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           CEFEAA95-8B9C-3F68-8CBD-CE00A29DAEFC
+install-name:    '/System/Library/PrivateFrameworks/DisplayTransportServices.framework/Versions/A/DisplayTransportServices'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _DTSErrorDomain, _DTSI2CTransactionLengthLimit, _DTSNativeAUXTransactionLengthLimit, 
+                       _DisplayTransportServicesVersionNumber, _DisplayTransportServicesVersionString ]
+    objc-classes:    [ DTSAgentConnection, DTSDPDeviceDPCDInfo, DTSDPDeviceDescription, 
+                       DTSDPDeviceProxy, DTSDisplayPortDeviceAnalyticsData, DTSDisplayPortDeviceManager, 
+                       DTSIOConnectImpl, DTSIOKitLib, DTSIOKitLibImpl, DTSIOPMAssertionImpl, 
+                       DTSIOServiceImpl ]
+...

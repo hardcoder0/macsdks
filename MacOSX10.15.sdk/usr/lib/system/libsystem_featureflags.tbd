@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           29FD922A-EC2C-3F25-BCCC-B58D716E60EC
+  - target:          x86_64-maccatalyst
+    value:           29FD922A-EC2C-3F25-BCCC-B58D716E60EC
+install-name:    '/usr/lib/system/libsystem_featureflags.dylib'
+current-version: 17
+parent-umbrella:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    umbrella:        System
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ __os_feature_enabled_impl ]
+...

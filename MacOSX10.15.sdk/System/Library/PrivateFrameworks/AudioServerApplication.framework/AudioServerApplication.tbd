@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           CB4059EA-A8DF-31C2-B48E-5197A82A6E0A
+  - target:          x86_64-maccatalyst
+    value:           CB4059EA-A8DF-31C2-B48E-5197A82A6E0A
+install-name:    '/System/Library/PrivateFrameworks/AudioServerApplication.framework/Versions/A/AudioServerApplication'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    objc-classes:    [ ASAAudioDevice, ASAAudioFormat, ASABooleanControl, ASABox, 
+                       ASAClockDevice, ASAControl, ASACoreAudio, ASALevelControl, 
+                       ASAObject, ASAPlaythrough, ASAPlugin, ASASelectorControl, 
+                       ASAStream ]
+...

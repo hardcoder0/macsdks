@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           9886DA57-1D4D-3707-AD55-D6045DC0371C
+  - target:          x86_64-maccatalyst
+    value:           9886DA57-1D4D-3707-AD55-D6045DC0371C
+install-name:    '/System/Library/PrivateFrameworks/CombineCocoa.framework/Versions/A/CombineCocoa'
+current-version: 134.102
+compatibility-version: 0
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _CombineCocoaVersionNumber, _CombineCocoaVersionString ]
+...

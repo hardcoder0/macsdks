@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           F30D7725-D521-3842-8A14-39BB98561DEC
+  - target:          x86_64-maccatalyst
+    value:           F30D7725-D521-3842-8A14-39BB98561DEC
+install-name:    '/System/Library/PrivateFrameworks/IntentsServices.framework/Versions/A/IntentsServices'
+swift-abi-version: 7
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _INSAssistantErrorDomain, _INSExtensionServiceTraceCompletionHandlerWithCode, 
+                       _INSExtractPreferencesResponseFromMetricsContext, _INSGenerateMetricsContextUsingAppPreferenceResponse, 
+                       _INSJSONEncodedIntent, _INSJSONEncodedIntentResponse, _INSJSONEncodedSlotResolutionResult, 
+                       _INSSiriAceErrorDomain, _INSSiriSerializedUserActivityKey, 
+                       _IntentsServicesVersionNumber, _IntentsServicesVersionString ]
+    objc-classes:    [ INSAnalytics, INSExtensionService ]
+...

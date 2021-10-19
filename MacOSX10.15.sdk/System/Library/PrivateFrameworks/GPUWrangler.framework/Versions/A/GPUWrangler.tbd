@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           487F2E7A-A5FF-3C36-A8E9-B85D98618116
+  - target:          x86_64-maccatalyst
+    value:           487F2E7A-A5FF-3C36-A8E9-B85D98618116
+install-name:    '/System/Library/PrivateFrameworks/GPUWrangler.framework/Versions/A/GPUWrangler'
+current-version: 0
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _GPUWranglerClose, _GPUWranglerDispatchEvent, _GPUWranglerForEachGPU, 
+                       _GPUWranglerGPUByID, _GPUWranglerGPUCopyProperty, _GPUWranglerGPUCopyPropertyStr, 
+                       _GPUWranglerGPUCopyRegistryService, _GPUWranglerGPUEject, 
+                       _GPUWranglerGPUEjectCancel, _GPUWranglerGPUEjectFinalize, 
+                       _GPUWranglerGPUEjectFinalized, _GPUWranglerGPUGetAttribute, 
+                       _GPUWranglerGPUGetFramebufferAccelIndex, _GPUWranglerGPUGetFramebufferCount, 
+                       _GPUWranglerGPUGetFramebufferRegistryEntryID, _GPUWranglerGPUGetID, 
+                       _GPUWranglerGPUGetPCIDeviceID, _GPUWranglerGPUGetPCIVendorID, 
+                       _GPUWranglerGPUGetPropertyBool, _GPUWranglerGPUGetPropertyU64, 
+                       _GPUWranglerGPUGetRegistryEntryID, _GPUWranglerGPUGetTypeID, 
+                       _GPUWranglerGPUGetUserPtr, _GPUWranglerGPUIsDiscrete, _GPUWranglerGPUIsEjectFinalized, 
+                       _GPUWranglerGPUIsEjectFinalizing, _GPUWranglerGPUIsEjected, 
+                       _GPUWranglerGPUIsIntegrated, _GPUWranglerGPUIsRemovable, _GPUWranglerGPUSetAttribute, 
+                       _GPUWranglerGPUSetUserPtr, _GPUWranglerGetEventPort, _GPUWranglerGetTypeID, 
+                       _GPUWranglerOpen, _GPUWranglerOpenWithTimeout, _GPUWranglerRegisterEventBlock, 
+                       _GPUWranglerWaitForPublish, __GPUWranglerGPUGetFlags, __GPUWranglerGPUGetKernGPU, 
+                       __GPUWranglerGPULoadDrivers, __GPUWranglerSetConfiguration ]
+...

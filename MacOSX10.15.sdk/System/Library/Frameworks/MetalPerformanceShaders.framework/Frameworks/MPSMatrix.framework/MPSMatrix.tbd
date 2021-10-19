@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           02006D92-E2AB-3892-A96B-37F6520C19BA
+  - target:          x86_64-maccatalyst
+    value:           02006D92-E2AB-3892-A96B-37F6520C19BA
+install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/Versions/A/MPSMatrix'
+current-version: 122.5.6
+allowable-clients:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    clients:         [ MPSNeuralNetwork, MetalPerformanceShaders ]
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ __Z21MPSDecrementReadCountP18MPSTemporaryMatrix, __Z21MPSDecrementReadCountP18MPSTemporaryVector ]
+    objc-classes:    [ MPSMatrixBinaryKernel, MPSMatrixCopy, MPSMatrixCopyDescriptor, 
+                       MPSMatrixDecompositionCholesky, MPSMatrixDecompositionLU, 
+                       MPSMatrixFindTopK, MPSMatrixLogSoftMax, MPSMatrixLogSoftMaxGradient, 
+                       MPSMatrixMultiplication, MPSMatrixRandom, MPSMatrixRandomDistributionDescriptor, 
+                       MPSMatrixRandomMTGP32, MPSMatrixRandomPhilox, MPSMatrixSoftMax, 
+                       MPSMatrixSoftMaxGradient, MPSMatrixSolveCholesky, MPSMatrixSolveLU, 
+                       MPSMatrixSolveTriangular, MPSMatrixUnaryKernel, MPSMatrixVectorMultiplication ]
+...

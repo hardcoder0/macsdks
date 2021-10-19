@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           B36F597A-4364-3439-ABAB-82D7F3C0498E
+  - target:          x86_64-maccatalyst
+    value:           B36F597A-4364-3439-ABAB-82D7F3C0498E
+install-name:    '/usr/lib/libmenu.5.4.dylib'
+current-version: 5.4
+compatibility-version: 5.4
+...

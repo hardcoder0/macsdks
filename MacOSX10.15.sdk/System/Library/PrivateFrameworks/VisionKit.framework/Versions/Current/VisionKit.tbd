@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           23698C81-10C1-3758-847F-FE1433591980
+install-name:    '/System/Library/PrivateFrameworks/VisionKit.framework/Versions/A/VisionKit'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _DCScanWasDeletedNotification, _DCTransformFromImageOrientation, 
+                       _dc_clockwiseRotationsFromUpToMatchOrientation, _dc_counterClockwiseRotationsFromUpToMatchOrientation, 
+                       _dc_nonLocalizedOrientationNameForType, _dc_orientationByRotatingLeft, 
+                       _dc_orientationByRotatingRight, _dc_orientationFromNonLocalizedName, 
+                       _kDCBlackWhiteFilter, _kDCColorFilter, _kDCDocCamFilterUsageCount, 
+                       _kDCDocCamMarkUpUIAppearanceCount, _kDCDocCamRecropUIAppearanceCount, 
+                       _kDCDocCamReorderedPageCount, _kDCDocCamReselectFilterUIAppearanceCount, 
+                       _kDCDocCamSharedAsPDFCount, _kDCGrayscaleFilter, _kDCPhotoFilter, 
+                       _kDCSwitchControl, _kDCVoiceOver, _kICDocCamImageQuadPerspectiveCorrectImageInset ]
+    objc-classes:    [ DCAnalyticsReporterBase, DCNotesSPI, DCUsageAnalyticsReporter, 
+                       ICDocCamImageFilters, ICDocCamImageQuad ]
+...

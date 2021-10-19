@@ -1,0 +1,11 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           BE42ABAB-992F-30D0-9974-7DC5ED0276ED
+install-name:    '/System/Library/PrivateFrameworks/UniversalAccess.framework/Versions/A/Frameworks/UAEHCommon.framework/Versions/A/Libraries/libUAEHZoom.dylib'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _UADEventHandlerGetVtable ]
+...

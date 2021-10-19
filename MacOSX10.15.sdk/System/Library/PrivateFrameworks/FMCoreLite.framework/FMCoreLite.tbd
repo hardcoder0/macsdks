@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           181AA486-B675-31D1-946E-8F618BEBAF21
+  - target:          x86_64-maccatalyst
+    value:           181AA486-B675-31D1-946E-8F618BEBAF21
+install-name:    '/System/Library/PrivateFrameworks/FMCoreLite.framework/Versions/A/FMCoreLite'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _FMAlertCategoryNone, _FMEmptyResult, _FMErrorDomain, _FMFutureCallbackStack, 
+                       __FMBlockDescriptor, __FMDictionaryOfMetrics, __FMFutureDidPerformCallback, 
+                       __FMFutureWillPerformCallback, __FMPopScopedDescriptor, __FMPushScopedDescriptor, 
+                       __FMScopedDescriptor, _kFMDataArchiverErrorDomain, _kFMSynchronizerTimeoutNever ]
+    objc-classes:    [ FMAlert, FMCancelationToken, FMConcurrentMutableArray, FMConcurrentMutableDictionary, 
+                       FMDataArchiver, FMFuture, FMInternalFileContainer, FMPair, 
+                       FMPreferencesUtil, FMPromise, FMQueue, FMReadWriteLock, FMScheduler, 
+                       FMSharedFileContainer, FMSynchronizer, FMValueThrottler, FMXPCServiceDescription, 
+                       FMXPCSession, FMXPCTimer, _FMLazyFuture ]
+...

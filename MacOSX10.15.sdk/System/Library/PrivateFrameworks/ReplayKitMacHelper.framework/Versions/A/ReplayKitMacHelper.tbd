@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           00B591EC-B5EA-386D-B804-9942F0CB7E50
+install-name:    '/System/Library/PrivateFrameworks/ReplayKitMacHelper.framework/Versions/A/ReplayKitMacHelper'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _ReplayKitMacHelperMake, _ReplayKitMacHelperVersionNumber, 
+                       _ReplayKitMacHelperVersionString, _kRPBroadcastActivityViewServiceProtocol, 
+                       _kRPVideoEditorViewServiceProtocol ]
+    objc-classes:    [ RPBlurWindow, RPBorderlessEffectWindow, RPBroadcastActivityHostRemoteNSViewController, 
+                       RPBroadcastActivityViewServiceExtensionHostContext, RPDimAndShadowWindow, 
+                       RPDimAndShadowWindowContentView, RPRemoteViewContainerWindow, 
+                       RPRemoteWindowController, RPTransparentWindow, RPVideoEditorHostRemoteNSViewController, 
+                       RPVideoEditorViewServiceExtensionHostContext, ReplayKitMacHelperClass ]
+    objc-ivars:      [ RPBlurWindow.blurLayer, RPBorderlessEffectWindow.noSourceWindow, 
+                       RPDimAndShadowWindow.animatesTransitions, RPDimAndShadowWindow.dimLayer, 
+                       RPDimAndShadowWindow.groupLayer, RPDimAndShadowWindow.shadowCenterKnockoutLayer, 
+                       RPDimAndShadowWindow.shadowLayer ]
+...

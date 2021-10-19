@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           0FF56DB7-6799-3BD2-BC6B-FCCD9B79B975
+  - target:          x86_64-maccatalyst
+    value:           0FF56DB7-6799-3BD2-BC6B-FCCD9B79B975
+install-name:    '/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLVMPlugin.dylib'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _cvmsPluginElementBuild, _cvmsPluginServiceInitialize, _cvmsPluginServiceTerminate, 
+                       _oglCodeGenServiceGenerateIR, _oglCodeGenServiceInitialize, 
+                       _oglCodeGenServiceTerminate ]
+...

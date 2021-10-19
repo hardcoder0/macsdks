@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           1D8AE0AF-68D5-3582-B18D-E8439C3690A7
+  - target:          x86_64-maccatalyst
+    value:           1D8AE0AF-68D5-3582-B18D-E8439C3690A7
+install-name:    '/System/Library/PrivateFrameworks/ParsecModel.framework/Versions/A/ParsecModel'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _ParsecModelVersionNumber, _ParsecModelVersionString ]
+    objc-classes:    [ PARCategory, PARCollectionStartEvent, PAREvent, PARFlushEvent, 
+                       PARImagesSession, PARSafariSession, PARSpotlightSession, PARUsageEvent ]
+...

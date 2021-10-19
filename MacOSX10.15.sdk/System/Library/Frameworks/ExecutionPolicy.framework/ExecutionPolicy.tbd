@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           B0165F70-7BBC-3FC2-945B-FADE0F4CEE5F
+install-name:    '/System/Library/Frameworks/ExecutionPolicy.framework/Versions/A/ExecutionPolicy'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _EPErrorDomain ]
+    objc-classes:    [ EPDeveloperTool, EPExecutionPolicy ]
+...

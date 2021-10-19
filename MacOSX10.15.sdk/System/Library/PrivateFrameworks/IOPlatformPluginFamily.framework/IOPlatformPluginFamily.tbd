@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           C091BFD3-E3EA-3628-B9E5-BABC4A33CFE5
+install-name:    '/System/Library/PrivateFrameworks/IOPlatformPluginFamily.framework/Versions/A/IOPlatformPluginFamily'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _IOPPFGetDiagProperty, _IOPPFGetDiagPropertyFromDict, _IOPPFGetHandler, 
+                       _IOPPFGetProperty, _IOPPFPrintTest, _IOPPFSetFanThrottleMode, 
+                       _IOPPFSetProperties ]
+...

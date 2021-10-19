@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           835471F3-0644-342C-BAE4-F7D0929EBF23
+  - target:          x86_64-maccatalyst
+    value:           835471F3-0644-342C-BAE4-F7D0929EBF23
+install-name:    '/System/Library/PrivateFrameworks/FeatureFlagsSupport.framework/Versions/A/FeatureFlagsSupport'
+current-version: 17
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    objc-classes:    [ FFConfiguration, FFFeatureState ]
+...

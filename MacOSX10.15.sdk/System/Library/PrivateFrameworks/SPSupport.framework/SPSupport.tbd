@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           4551A643-74C5-3F62-BFFC-80007742AAAF
+install-name:    '/System/Library/PrivateFrameworks/SPSupport.framework/Versions/A/SPSupport'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ __comparePropertyOrders ]
+    objc-classes:    [ SPDevice, SPDocument, SPReporter ]
+    objc-ivars:      [ SPDevice.children, SPDevice.entry, SPDevice.volumes, SPReporter._bundle, 
+                       SPReporter._fromAppleRequirement, SPReporter._fromIdentifiedDeveloperRequirement, 
+                       SPReporter._fromMacAppStoreRequirement ]
+...

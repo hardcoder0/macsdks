@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           40ED1A74-3753-33E0-A922-04C53F54786D
+install-name:    '/System/Library/PrivateFrameworks/CDDataAccess.framework/Frameworks/DACoreDAVGlue.framework/Versions/A/DACoreDAVGlue'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _coreDAVValidationErrorFromRawError ]
+    objc-classes:    [ DACoreDAVLogger, DACoreDAVTaskManager ]
+...

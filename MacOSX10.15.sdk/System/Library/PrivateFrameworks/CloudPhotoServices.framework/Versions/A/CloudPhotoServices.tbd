@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           ACC40C5C-6B3C-3B0B-8B98-529114EC0E41
+  - target:          x86_64-maccatalyst
+    value:           ACC40C5C-6B3C-3B0B-8B98-529114EC0E41
+install-name:    '/System/Library/PrivateFrameworks/CloudPhotoServices.framework/Versions/A/CloudPhotoServices'
+current-version: 161.0.120
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _CloudPhotoServicesOptionBakeInOrientationKey, _CloudPhotoServicesOptionColorOutputKey, 
+                       _CloudPhotoServicesOptionExportPresetKey, _CloudPhotoServicesOptionIsPassthroughConversionKey, 
+                       _CloudPhotoServicesOptionLivePhotoPairingIdentifierKey, _CloudPhotoServicesOptionMaximumPixelCountKey, 
+                       _CloudPhotoServicesOptionOriginatingSignatureKey, _CloudPhotoServicesOptionOutputFileTypeKey, 
+                       _CloudPhotoServicesOptionRenderOriginatingSignatureKey, _CloudPhotoServicesOptionTargetFileSizeKey, 
+                       _CloudPhotoServicesRetryCount, _CloudPhotoServicesRetryDelay, 
+                       _CloudPhotoServicesVersionNumber, _CloudPhotoServicesVersionString, 
+                       _CloudPhotoServicesVideoConversionPowerEfficiencyKey, _CloudPhotoServicesVideoConversionPowerEfficiencyMinimumDurationKey, 
+                       _CloudPhotoServicesVideoConversionPowerEfficiencyOverrideUserDefaultsKey, 
+                       __logDropDerivatives ]
+    objc-classes:    [ CloudPhotoServices, CloudPhotoServicesUtilities ]
+...

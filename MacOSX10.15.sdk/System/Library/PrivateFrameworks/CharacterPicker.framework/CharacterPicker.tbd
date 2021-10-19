@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           FAF26F82-0163-32EC-BABE-8B107A87A17B
+install-name:    '/System/Library/PrivateFrameworks/CharacterPicker.framework/Versions/A/CharacterPicker'
+current-version: 164.2
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _CPKCategoryTitleFavorites, _CPKCategoryTitleMore, _CPKCategoryTitleRecents, 
+                       _CPKCategoryTitleRecentsAndFavorites, _CPKCategoryTitleSearch, 
+                       _CPKCategoryTitleSeparator, _CPKCategoryTitleSpace, _CPKCharacterPickerRecentsChangedNotification, 
+                       _CPKCharacterPickerWindowWillOpenNotification, _CPKCharacterViewerWindowRevertToPickerNotification, 
+                       _CPKCharacterViewerWindowWillOpenNotification, _CPKCharactersViewDidChangedLayoutNotification, 
+                       _CPKEmojiFoundationPrefsChangedNotification, _CPKGetRawCategoryData, 
+                       _CPKLogTypeSessionEvents, _CPKLogTypeStartupPerformance, _CPKSearchFieldDidGetFocusNotification ]
+    objc-classes:    [ CPKCharactersView, CPKDefaultDataSource, CPKEmojiDataSource, 
+                       CPKEmojiIMDataSource, CPKEmojiIMViewController, CPKFont, CPKPopover, 
+                       CPKSearchField, CPKStandardCharacterEntity, CPKWindow ]
+...

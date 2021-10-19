@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           BE99683D-352B-3CFA-A1D3-837A3FEEA75C
+  - target:          x86_64-maccatalyst
+    value:           BE99683D-352B-3CFA-A1D3-837A3FEEA75C
+install-name:    '/System/Library/PrivateFrameworks/Categories.framework/Versions/A/Categories'
+current-version: 5.7
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _CTCategoriesDidChangeNotification, _CTCategoriesVersionIdentifierKey, 
+                       _CTCategoriesVersionNumber, _CTCategoriesVersionString, _CTCategoryIdentifierCreativity, 
+                       _CTCategoryIdentifierEducation, _CTCategoryIdentifierEntertainment, 
+                       _CTCategoryIdentifierGames, _CTCategoryIdentifierHealthAndFitness, 
+                       _CTCategoryIdentifierOther, _CTCategoryIdentifierOtherUnknown, 
+                       _CTCategoryIdentifierProductivity, _CTCategoryIdentifierReadingAndReference, 
+                       _CTCategoryIdentifierSocialNetworking, _CTCategoryIdentifierSystem, 
+                       _CTCategoryIdentifierSystemBlockable, _CTCategoryIdentifierSystemHidden, 
+                       _CTCategoryIdentifierSystemUnblockable, _CTErrorDomain, _CTErrorKeyHTTPResponse, 
+                       _CTErrorKeyHTTPResponseData, _CTOSPlatformAll, _CTOSPlatformCurrent, 
+                       _CTOSPlatformiOS, _CTOSPlatformmacOS, _CTOSPlatformtvOS, _CTOSPlatformwatchOS ]
+    objc-classes:    [ CTCategories, CTCategory, CTError, CTLogging, CTUtilities ]
+...

@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           7F99D166-86DC-3F77-A34A-2DA7183D7160
+  - target:          x86_64-maccatalyst
+    value:           7F99D166-86DC-3F77-A34A-2DA7183D7160
+install-name:    '/System/Library/PrivateFrameworks/URLFormatting.framework/Versions/A/URLFormatting'
+current-version: 119.18
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    objc-classes:    [ URLFormattingTestingOverrides ]
+...

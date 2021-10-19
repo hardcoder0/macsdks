@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           23423A6C-FA6E-3BF5-BBF9-413DCD112990
+install-name:    '/System/Library/PrivateFrameworks/MessagesKit.framework/Versions/A/MessagesKit'
+current-version: 800
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _MessagesKitVersionNumber, _MessagesKitVersionString, _SOAccountPropertyIMAccountUniqueIDKey, 
+                       _SOAlertsAddressMeKey, _SOAlertsChatGuidKey, _SOAlertsMessageDeliveryErrorKey, 
+                       _SOAlertsMessageDeliveryErrorNotification, _SOAlertsMessageGuidKey, 
+                       _SOAlertsPlaySoundsKey, _SODefaultsChangedKey, _SOFaceTimeDNDMenuOptionsDidChangeNotification, 
+                       _SOFaceTimeFavoritesDNDEnabledKey, _SOFaceTimeFavoritesKey, 
+                       _SOFaceTimeFavoritesMenuOptionsKey, _SOFaceTimeFavoritesSelectedMenuOptionKey, 
+                       _SOFaceTimeSettingsDomain, _SOFaceTimeTwoTimeCallthroughEnabledKey, 
+                       _SOHelperDefaultsChangedNotification, _SOIndividualUnreadChatListKey, 
+                       _SOIndividualUnreadCountKey, _SOSortedUnreadChatListKey, _SOTotalUnreadCountKey, 
+                       _SOUnreadChatCountKey, _SOUnreadChatDateKey, _SOUnreadChatGUIDKey, 
+                       _SOUnreadChatGuidKey, _SOUnreadChatListKey, _SOUnreadChatNamesKey, 
+                       _SOUnreadChatUpdatedNotification, _SOUnreadCountChatGUIDKey, 
+                       _SOUnreadCountKey, _SOUnreadCountUpdatedNotification, _kGUIDToAccountIDMap, 
+                       _kGUIDToOtherPersonMap, _kIncompleteFileTransfers, _kVisibleFileTransfers ]
+    objc-classes:    [ SOAlertsHelper, SOFavoritesHelper, SOFileTransferHelper, SOHelper, 
+                       SOHelperCenter, SOHelperReceiver, SOMessageHelper, SOUnreadCountHelper ]
+...

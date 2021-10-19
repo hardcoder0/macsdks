@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           65A77FE9-D4E4-3743-8452-967A4939E08D
+  - target:          x86_64-maccatalyst
+    value:           65A77FE9-D4E4-3743-8452-967A4939E08D
+install-name:    '/System/Library/PrivateFrameworks/RevealCore.framework/Versions/A/RevealCore'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _RevealCoreVersionNumber, _RevealCoreVersionString ]
+    objc-classes:    [ RVDocumentContext, RVItem, RVSelection ]
+...

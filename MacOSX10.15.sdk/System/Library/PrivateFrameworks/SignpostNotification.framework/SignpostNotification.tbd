@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           3AB0B639-7F9C-3783-BDBB-2E8CA1E364EA
+  - target:          x86_64-maccatalyst
+    value:           3AB0B639-7F9C-3783-BDBB-2E8CA1E364EA
+install-name:    '/System/Library/PrivateFrameworks/SignpostNotification.framework/Versions/A/SignpostNotification'
+current-version: 42.2
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _EnableSignpostNotificationGeneration, _SignpostGetNewNotificationConnection, 
+                       _SignpostNotificationSendNotificationSubscriptionRequestOnConnection, 
+                       _SignpostNotificationVersionNumber, _SignpostNotificationVersionString ]
+...

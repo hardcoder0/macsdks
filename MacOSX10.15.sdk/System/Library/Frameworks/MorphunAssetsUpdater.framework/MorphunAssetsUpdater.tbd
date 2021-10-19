@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           1D0B2F05-B49E-3D00-930E-E9D4FA9BFC01
+  - target:          x86_64-maccatalyst
+    value:           1D0B2F05-B49E-3D00-930E-E9D4FA9BFC01
+install-name:    '/System/Library/Frameworks/MorphunAssetsUpdater.framework/Versions/A/MorphunAssetsUpdater'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _MorphunAssetsUpdaterVersionNumber, _MorphunAssetsUpdaterVersionString ]
+    objc-classes:    [ ForceUpdateMessage, GetAssetPathsMessage, MorphunAssetsUpdater ]
+...

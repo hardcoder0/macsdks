@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           CA539FC5-61DD-3A24-8622-E4242AB30651
+install-name:    '/System/Library/PrivateFrameworks/AppStoreUI.framework/Versions/A/AppStoreUI'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _ASLogDefault, _ASLogInit, _ASWriteReviewConfigurationIconSize, 
+                       _AppStoreUIVersionNumber, _AppStoreUIVersionString, _CGRectWithAppLayoutDirectionRelativeToRect, 
+                       _CGRectWithFlippedOriginRelativeToBoundingRect ]
+    objc-classes:    [ ASMaxLengthFormatter, ASRateViewController, ASRatingControl, 
+                       ASReviewViewController, ASTextField, ASThanksViewController, 
+                       ASTransitionViewController, ASWriteReviewBodyView, ASWriteReviewConfiguration, 
+                       ASWriteReviewController, ASWriteReviewDialogView, ASWriteReviewRateView, 
+                       ASWriteReviewThanksView, ASWriteReviewWindowController ]
+...

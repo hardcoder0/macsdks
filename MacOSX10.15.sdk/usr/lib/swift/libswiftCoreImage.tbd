@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           1485E8EF-EDA9-3981-84D7-DF3BFE361929
+  - target:          x86_64-maccatalyst
+    value:           1485E8EF-EDA9-3981-84D7-DF3BFE361929
+install-name:    '/usr/lib/swift/libswiftCoreImage.dylib'
+current-version: 0
+swift-abi-version: 7
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ '$ld$install_name$os10.10$@rpath/libswiftCoreImage.dylib', 
+                       '$ld$install_name$os10.11$@rpath/libswiftCoreImage.dylib', 
+                       '$ld$install_name$os10.12$@rpath/libswiftCoreImage.dylib', 
+                       '$ld$install_name$os10.13$@rpath/libswiftCoreImage.dylib', 
+                       '$ld$install_name$os10.14$@rpath/libswiftCoreImage.dylib', 
+                       '$ld$install_name$os10.9$@rpath/libswiftCoreImage.dylib', 
+                       '__swift_FORCE_LOAD_$_swiftCoreImage' ]
+...

@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           2054572C-C65C-3EE5-8108-72C3B1E15727
+  - target:          x86_64-maccatalyst
+    value:           2054572C-C65C-3EE5-8108-72C3B1E15727
+install-name:    '/System/Library/PrivateFrameworks/SharePointManagement.framework/Versions/A/SharePointManagement'
+current-version: 104
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _SharePointManagementVersionNumber, _SharePointManagementVersionString, 
+                       __kSharePointPropertyAFPGuestAccessKey, __kSharePointPropertyAFPNameKey, 
+                       __kSharePointPropertyAFPSharedKey, __kSharePointPropertyAFPUseParentOwnerKey, 
+                       __kSharePointPropertyAFPUseParentPrivsKey, __kSharePointPropertyDirectoryPathKey, 
+                       __kSharePointPropertyFTPGuestAccessKey, __kSharePointPropertyFTPNameKey, 
+                       __kSharePointPropertyFTPSharedKey, __kSharePointPropertyGeneratedUID, 
+                       __kSharePointPropertyNameKey, __kSharePointPropertySMBCreateMaskKey, 
+                       __kSharePointPropertySMBDirectoryMaskKey, __kSharePointPropertySMBGuestAccessKey, 
+                       __kSharePointPropertySMBInheritPermissionsKey, __kSharePointPropertySMBNameKey, 
+                       __kSharePointPropertySMBOpLocksKey, __kSharePointPropertySMBSharedKey, 
+                       __kSharePointPropertySMBStrictLockingKey, __kSharePointPropertySharePointAccountUUIDKey, 
+                       __kSharePointPropertySharePointGroupIDKey, __kSharePointPropertySharePointVersionKey, 
+                       __kSharePointPropertySharingUUIDKey ]
+    objc-classes:    [ SPMSharePoint, SPMSharePointManager, SPMVolume, SPMVolumeObserver ]
+...

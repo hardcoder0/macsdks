@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           D78DF78F-D6D8-3E83-86C3-05183C3F205D
+install-name:    '/System/Library/Frameworks/LocalAuthentication.framework/Support/MechanismBase.framework/Versions/A/MechanismBase'
+current-version: 693.140.3
+exports:
+  - targets:         [ x86_64-macos ]
+    objc-classes:    [ ACMContextRecord, MechanismACM, MechanismBase, MechanismContext, 
+                       MechanismKofN, MechanismKofNReorganizer, RemoteUIManager ]
+...

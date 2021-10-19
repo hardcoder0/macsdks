@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           15B82B6B-2253-30B3-A28C-F44075515DB6
+install-name:    '/System/Library/PrivateFrameworks/ToneKit.framework/Versions/A/ToneKit'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _TKFloatCeilForScale, _TKFloatEqualToFloat, _TKFloatFloorForScale, 
+                       _TKFloatGetSafeScaleForValue, _TKFloatGreaterThanOrEqualToFloat, 
+                       _TKFloatLessThanOrEqualToFloat, _TKFloatRoundForScale, _TKPointGetDistanceToPoint ]
+    objc-classes:    [ TKPickerDividerItem, TKPickerItem, TKPickerOutlineView, TKPickerPopUpButton, 
+                       TKPickerPopUpButtonCell, TKPickerRowItem, TKPickerSectionItem, 
+                       TKPickerSelectableItem, TKPickerTableCellView, TKPickerTableRowView, 
+                       TKToneClassicsPickerItem, TKTonePickerController, TKTonePickerItem, 
+                       TKTonePickerOutlineViewController, TKTonePickerPopUpButtonViewController, 
+                       TKTonePickerSectionItem, TKTonePickerView, TKTonePickerViewController ]
+...

@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-maccatalyst
+    value:           48DBE34E-F05B-3B9B-9E01-1C1C6EE8BD9F
+install-name:    '/System/Library/PrivateFrameworks/VisualTestKit.framework/Versions/A/VisualTestKit'
+exports:
+  - targets:         [ x86_64-maccatalyst ]
+    symbols:         [ _NSStringFromVTKAssertID, _VTKID, ___VTKAddExclusionAreaAt, 
+                       ___VTKAddHorizontalGuideAt, ___VTKAddSqureGuideAt, ___VTKAddVerticalGuideAt, 
+                       ___VTKAssertView, ___VTKExclusionAreaStatusBar, ___VTKSetImageComparatorStrategy, 
+                       ___VTKSetImageComparisonOptions, ___VTKSetReferenceImagesDirectory, 
+                       ___VTKSetReferenceItemSourceType ]
+    objc-classes:    [ VTKAssertID ]
+...

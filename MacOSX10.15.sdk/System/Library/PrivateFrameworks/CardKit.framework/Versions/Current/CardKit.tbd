@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           E0F60C47-F245-3EDE-B656-37F43AC551A6
+install-name:    '/System/Library/PrivateFrameworks/CardKit.framework/Versions/A/CardKit'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _CRKIsLargeDevice, _CRKIsRTL, _CardKitVersionNumber, _CardKitVersionString, 
+                       __CRKIsRTLWithApp, __CRKSystemRootDirectory ]
+    objc-classes:    [ CRKCardPresentation, CRKCardPresentationConfiguration, CRKCardSectionViewConfiguration, 
+                       CRKCardSectionViewController, CRKCardViewController, CRKComposedStackView, 
+                       CRKComposedView, CRKContainerCardSectionView, CRKIdentifiedProviderRegistry, 
+                       CRKKeyline, _CRKBuiltInProvider, _CRKBundleIdentifiedCardSectionViewProvider, 
+                       _CRKBundleManager, _CRKCardSectionViewControllerFactory, _CRKCardSectionViewControllerRegistry, 
+                       _CRKCardSectionViewLoader, _CRKCardViewControllerTransitionAnimator, 
+                       _CRKCardViewControllerTransitionCoordinator, _CRKDebugOverlayView, 
+                       _CRKHitTestPassThroughView, _CRKImageLoader, _CRKProviderBundle, 
+                       _CRKProviderBundleManager, _CRKSectionShuffleTransitionAnimator, 
+                       _CRKSendMessageCardFactory ]
+...

@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           D062418D-3F99-3CDF-AD50-849A3C93FB5A
+install-name:    '/System/Library/PrivateFrameworks/BiometricKitUI.framework/Versions/A/BiometricKitUI'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _BiometricKitUIVersionNumber, _BiometricKitUIVersionString, 
+                       _biometric_kit_ui_log ]
+    objc-classes:    [ BKUIBlueButton, BKUIDeviceImageView, BiometricKitUI, BiometricKitUIEnrollViewController ]
+...

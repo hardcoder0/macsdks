@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           0F14CBBE-A00B-31F1-BE1C-10171BCFF02B
+  - target:          x86_64-maccatalyst
+    value:           0F14CBBE-A00B-31F1-BE1C-10171BCFF02B
+install-name:    '/System/Library/PrivateFrameworks/CoreCaptureDaemon.framework/Versions/A/CoreCaptureDaemon'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _CoreCaptureStart, _CoreCaptureStop, _coreCaptureOsLog, _glog_fd ]
+...

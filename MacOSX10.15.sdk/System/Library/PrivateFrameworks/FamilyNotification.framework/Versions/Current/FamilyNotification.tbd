@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           D904FE9A-E9B5-34FC-88DF-89D12ADBE25C
+install-name:    '/System/Library/PrivateFrameworks/FamilyNotification.framework/Versions/A/FamilyNotification'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _FAFamilyNotificationVersionNumber, _FAFamilyNotificationVersionString, 
+                       __FALogSystem ]
+    objc-classes:    [ FAFamilyNotification, FAFamilyNotifier ]
+...

@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           EC7F1209-7FB3-35CE-8983-AC7522F1663D
+  - target:          x86_64-maccatalyst
+    value:           EC7F1209-7FB3-35CE-8983-AC7522F1663D
+install-name:    '/System/Library/PrivateFrameworks/RemoteTextInput.framework/Versions/A/RemoteTextInput'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _RTICanLogMessageAtLevel, _RTILogFacility, _RTIServiceAnonymousName, 
+                       _RTIServiceIOSMacName, _RTIServiceMediaRemoteName, _RTIServiceRapportName, 
+                       _RTIServiceSharingName, _RTIServiceSharingSafariName, _RTIServiceTVControlServicesName, 
+                       _RemoteTextInputVersionNumber, _RemoteTextInputVersionString, 
+                       __RTI_NSStringFromCGRect ]
+    objc-classes:    [ RTIDataPayload, RTIDocumentState, RTIDocumentTraits, RTIInputSystemClient, 
+                       RTIInputSystemClientSession, RTIInputSystemDataPayload, RTIInputSystemService, 
+                       RTIInputSystemServiceSession, RTIInputSystemSession, RTIInputSystemSourceSession, 
+                       RTIStyledIntermediateText, RTITextOperations, RTIUtilities ]
+...

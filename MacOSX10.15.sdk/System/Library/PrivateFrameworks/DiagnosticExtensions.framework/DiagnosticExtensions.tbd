@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           8168D7EB-F6E7-3DA2-A623-440938B81962
+  - target:          x86_64-maccatalyst
+    value:           8168D7EB-F6E7-3DA2-A623-440938B81962
+install-name:    '/System/Library/PrivateFrameworks/DiagnosticExtensions.framework/Versions/A/DiagnosticExtensions'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _DEUtilsValidateConnection, _DEUtilsValidateDestination, _DiagnosticExtensionsVersionNumber, 
+                       _DiagnosticExtensionsVersionString, _pgrep, _signal_USR2 ]
+    objc-classes:    [ DEArchive, DEArchiveReader, DEArchiver, DEAttachmentGroup, 
+                       DEAttachmentItem, DEExtension, DEExtensionContext, DEExtensionHostContext, 
+                       DEExtensionManager, DEExtensionProvider, DELogMover, DELogging, 
+                       DEUtils, DiagnosticExtensions_Subsystem ]
+...

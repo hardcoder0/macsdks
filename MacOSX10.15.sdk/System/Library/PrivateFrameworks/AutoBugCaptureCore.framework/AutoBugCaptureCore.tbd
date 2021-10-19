@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           490DE897-E1A0-3BCC-BB62-5EFFC32291D7
+install-name:    '/System/Library/PrivateFrameworks/AutoBugCaptureCore.framework/Versions/A/AutoBugCaptureCore'
+current-version: 1238.120.1
+exports:
+  - targets:         [ x86_64-macos ]
+    objc-classes:    [ ABCAdministrator ]
+...

@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           071729BA-0DEF-3B1B-AE5F-B69A46FA276E
+  - target:          x86_64-maccatalyst
+    value:           071729BA-0DEF-3B1B-AE5F-B69A46FA276E
+install-name:    '/System/Library/PrivateFrameworks/AppStoreFoundation.framework/Versions/A/AppStoreFoundation'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    objc-classes:    [ ASFIAPItem, ASFReceipt ]
+...

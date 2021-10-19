@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-maccatalyst
+    value:           744E6387-1AF4-3713-8FB6-89F93EB9991B
+install-name:    '/System/iOSSupport/System/Library/Frameworks/AVKit.framework/Versions/A/AVKit'
+exports:
+  - targets:         [ x86_64-maccatalyst ]
+    symbols:         [ _AVKitErrorDomain, _AVKitMetadataIdentifierBrandIdentifier, 
+                       _AVKitMetadataIdentifierExternalContentIdentifier, _AVKitMetadataIdentifierExternalUserProfileIdentifier, 
+                       _AVKitMetadataIdentifierPlaybackProgress, _AVKitMetadataIdentifierServiceIdentifier, 
+                       _AVKitMetadataIdentifieriTunesStoreIdentifier, _AVPictureInPictureControllerContentSourceKey, 
+                       _AVPictureInPictureControllerDidStartNotification, _AVPictureInPictureControllerDidStopNotification, 
+                       _AVPictureInPictureControllerWillStartNotification, _AVPictureInPictureControllerWillStopNotification, 
+                       _AVPlayerItemAVKitDataDidChangeNotification ]
+    objc-classes:    [ AVAppStorePlayerView, AVBackgroundView, AVChapter, AVControlItem, 
+                       AVEditBehavior, AVEditBehaviorContext, AVExternalPlaybackController, 
+                       AVHomeIPCameraBehavior, AVHomeIPCameraBehaviorContext, AVHomeLoadingButtonControlItem, 
+                       AVKeyValueChange, AVMediaSelectionViewController, AVMusicAppBehavior, 
+                       AVMusicAppBehaviorContext, AVMutableValueTiming, AVNewsWidgetPlayerBehavior, 
+                       AVNewsWidgetPlayerBehaviorContext, AVObservationController, 
+                       AVPictureInPictureController, AVPictureInPicturePlayerLayerView, 
+                       AVPlayerController, AVPlayerControllerTimeResolver, AVPlayerViewController, 
+                       AVPlayerViewControllerCustomControlsView, AVRoutePickerView, 
+                       AVTimer, AVValueTiming, __AVPlayerLayerView ]
+...

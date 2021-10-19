@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           AF184214-7EA5-3DF6-9271-3570C87EC515
+install-name:    '/System/Library/PrivateFrameworks/PSNormalizer.framework/Versions/A/Libraries/libnserverlite.dylib'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _NormalizerDisableDistilling, _NormalizerEnableDistilling, 
+                       _NormalizerServerInit, _NormalizerServerRunJob, _NormalizerServerShutdown ]
+...

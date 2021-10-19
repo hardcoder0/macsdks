@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           A6877DAD-8F47-363C-983A-DC8DDE83B7B5
+  - target:          x86_64-maccatalyst
+    value:           A6877DAD-8F47-363C-983A-DC8DDE83B7B5
+install-name:    '/System/Library/PrivateFrameworks/BackgroundTaskManagement.framework/Versions/A/BackgroundTaskManagement'
+current-version: 104
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _BackgroundTaskManagementVersionNumber, _BackgroundTaskManagementVersionString, 
+                       _kBTMBackgroundItemsChangeNotification ]
+    objc-classes:    [ BTMAgentConnection, BTMBackgroundItem, BTMBackgroundItemController, 
+                       BTMBackgroundTaskManager, BTMLoginItem, BTMLoginItemController ]
+...

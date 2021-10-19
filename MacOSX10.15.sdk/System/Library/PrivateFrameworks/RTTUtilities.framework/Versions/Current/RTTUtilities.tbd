@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           225FAD2B-DF67-3012-8047-74DA09B40B2C
+  - target:          x86_64-maccatalyst
+    value:           225FAD2B-DF67-3012-8047-74DA09B40B2C
+install-name:    '/System/Library/PrivateFrameworks/RTTUtilities.framework/Versions/A/RTTUtilities'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _AXTTYMessageKeyCallID, _AXTTYMessageKeyContactID, _AXTTYMessageKeyContactPathSearchAction, 
+                       _AXTTYMessageKeyContactSearchAction, _AXTTYMessageKeyConversation, 
+                       _AXTTYMessageKeyConversationUpdates, _AXTTYMessageKeyDeleteAction, 
+                       _AXTTYMessageKeyMediaActions, _AXTTYMessageKeyReadAction, 
+                       _AXTTYMessageKeyRemoteConversationUpdates, _AXTTYMessageKeyResult, 
+                       _AXTTYMessageKeyServerSettingsUpdateAction, _AXTTYMessageKeyServiceMessageUpdates, 
+                       _AXTTYMessageKeySettingsKey, _AXTTYMessageKeyUUID, _AXTTYMessageKeyValue, 
+                       _AXTTYMessageKeyWriteAction, _AXTTYPreferredTransportMethodChangedNotification, 
+                       _RTTUtilitiesVersionNumber, _RTTUtilitiesVersionString, _accessibilityRTTUtilitiesBundle, 
+                       _kAXSRTTSettingsVersionPreference, _kAXSTTYHardwareEnabledPreference, 
+                       _kAXSTTYIncomingCallsTTYPreference, _kAXSTTYPreferredRelayNumberPreference, 
+                       _kAXSTTYShouldBeRealtimePreference, _kAXSTTYSoftwareEnabledPreference, 
+                       _ttyLocString, _ttyLocStringAndLocale ]
+    objc-classes:    [ AXRTTSettingsListenerHelper, AXTTYSimulatorSubscriptionContext, 
+                       RTTCall, RTTController, RTTConversation, RTTDatabaseManager, 
+                       RTTDictionaryManager, RTTNanoSettings, RTTRemoteCall, RTTServer, 
+                       RTTSettings, RTTTelephonyUtilities, RTTUtterance, TTYContactList, 
+                       TTYHistory ]
+...

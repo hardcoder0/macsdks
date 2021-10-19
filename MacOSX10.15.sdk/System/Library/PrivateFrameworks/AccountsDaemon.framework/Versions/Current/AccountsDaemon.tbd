@@ -1,0 +1,36 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           F8B91912-80AD-34C0-99CC-4A3569D9F6FD
+  - target:          x86_64-maccatalyst
+    value:           F8B91912-80AD-34C0-99CC-4A3569D9F6FD
+install-name:    '/System/Library/PrivateFrameworks/AccountsDaemon.framework/Versions/A/AccountsDaemon'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _ACAccountSyncClientID, _ACAccountSyncDataclassKeychainExtension, 
+                       _ACAccountSyncDevices, _ACAccountSyncHostnameKeychainExtension, 
+                       _ACAccountSyncKeychainExtension, _ACAccountSyncMailClassKey, 
+                       _ACAccountSyncMailProtocolKey, _ACAccountSyncQualifiedUsername, 
+                       _ACDAccountSyncAccountIsSyncable, _ACDAccountSyncDevices, 
+                       _ACDAccountSyncEnabled, _ACDAccountSyncMarkAccountCreated, 
+                       _ACDAccountSyncMarkAccountDeleted, _ACDAccountSyncRemoveTombstones, 
+                       _ACDLogAccessRequest, _ACDStringFromChangeType, _ACDisableAccountSync, 
+                       _ACErrorAccountSyncDomain, _ACOneTimeMigrateAccountSync, _ACOneTimeSMTPFixAccountSync, 
+                       _CopyAccountNamesEnabledForDataType, _CopyExternalSourcesEnabledForDataType, 
+                       _GetTetheredSyncingDisabledForDataType, _SetAccountNameEnabledForDataType, 
+                       _SetExternalSourceEnabledForDataType, _SetTetheredSyncingDisabledForDatatype, 
+                       __ACDConnectionLogSystem, __ACDLogSystem, _kACDSyncDataTypeBookmarks, 
+                       _kACDSyncDataTypeCalendars, _kACDSyncDataTypeContacts, _kACDSyncDataTypeMailAccounts, 
+                       _kACDSyncDataTypeNotes, _syncDataTypeForDataclass, _tetheredSyncSourceTypeForDataType ]
+    objc-classes:    [ ACDAccessPluginManager, ACDAccountNotifier, ACDAccountStore, 
+                       ACDAccountSync, ACDAuthenticationPluginManager, ACDClient, 
+                       ACDClientAuthorization, ACDClientAuthorizationManager, ACDClientProvider, 
+                       ACDDatabase, ACDDatabaseBackupActivity, ACDDataclassOwnersManager, 
+                       ACDDataclassOwnersManagerInterface, ACDKeychain, ACDKeychainCleanupActivity, 
+                       ACDKeychainManager, ACDLazyArray, ACDOAuthSigner, ACDPluginLoader, 
+                       ACDPreferences, ACDQueueDictionary, ACDServer, ACDTCCUtilities, 
+                       ACDTestManager, ACDTimeMachineAccountStore, ACDTransientDatabase, 
+                       ACDUserNotification, ACRemoteDeviceProxy ]
+...

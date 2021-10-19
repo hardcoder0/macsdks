@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           73BD8A06-2DF4-3C51-8EC7-8E3D0837C60F
+  - target:          x86_64-maccatalyst
+    value:           73BD8A06-2DF4-3C51-8EC7-8E3D0837C60F
+install-name:    '/System/Library/CoreServices/Encodings/libHebrewConverter.dylib'
+current-version: 76
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ ___CFStringEncodingGetHebrewConverterDefinition ]
+...

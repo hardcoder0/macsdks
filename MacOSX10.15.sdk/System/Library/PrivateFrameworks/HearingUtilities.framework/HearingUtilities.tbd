@@ -1,0 +1,46 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           58141383-3ED6-33D3-9DE3-85A93A56BC0C
+  - target:          x86_64-maccatalyst
+    value:           58141383-3ED6-33D3-9DE3-85A93A56BC0C
+install-name:    '/System/Library/PrivateFrameworks/HearingUtilities.framework/Versions/A/HearingUtilities'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _AXHACHearingAidCapabilities, _AXHACHearingAidComplianceEnabled, 
+                       _AXHACHearingAidComplianceSetEnabled, _AXHATrustChainReady, 
+                       _AXHearingAidAudioRoutesChangedNotification, _AXHearingAidControlCenterBundleID, 
+                       _AXHearingAidControlCenterPath, _AXLEHIAuthServiceUUIDString, 
+                       _AXLEHIAuthVersionCharacteristicUUIDString, _AXLEHIDISFirmwareVersionCharacteristicUUIDString, 
+                       _AXLEHIDISHardwareVersionCharacteristicUUIDString, _AXLEHIDISManufacturerCharacteristicUUIDString, 
+                       _AXLEHIDISModelNumberCharacteristicUUIDString, _AXLEHIDISServiceUUIDString, 
+                       _AXLEHIServiceUUIDString, _HUAudioTransferAvailabilityDidChangeNotification, 
+                       _HUHearingUIAvailabilityDidChangeNotification, _HUNearbyDevicesDidChangeNotification, 
+                       _HUPSAPServiceUUIDString, _HUUserLevelSetupAvailableNotification, 
+                       _HUUserRequestedAudioTransferCompleteNotification, _HUUserRequestedAudioTransferNotification, 
+                       _HearingUtilitiesVersionNumber, _HearingUtilitiesVersionString, 
+                       _accessibilityHearingAidSupportBundle, _cloudHearingAidDescriptionForDescription, 
+                       _compoundAttributeByAddingAttribute, _compoundAttributeByRemovingAttribute, 
+                       _compoundAttributeContainsAttribute, _hearingAidReceivingAudio, 
+                       _hearingAidStreamAvailable, _hearingAidStreamSelected, _hearingConnectionStatusDescription, 
+                       _hearingDeamonShouldBeRunning, _hearingEarFromInputOption, 
+                       _hearingInputRouteStringForOption, _hearingLocString, _hearingPropertyDescription, 
+                       _hearingUIShouldBeAvailable, _inputOptionFromHearingEar, _liveListenStreamSelected, 
+                       _nameForComplicationPreferredDisplayMode, _nameOfHearingDeviceReachableForAudioHandoff, 
+                       _propertyContainsProperty, _propertyIsDependentOnProperty, 
+                       _subPropertiesOfProperty, _supportsBinauralStreamingForHearingAid ]
+    objc-classes:    [ AXFakeHearingAidDevice, AXFakePSAPDevice, AXHAController, 
+                       AXHAControllerBrowser, AXHAListenerHelper, AXHAMessageHandlerContext, 
+                       AXHAPacket, AXHARemoteController, AXHASecurityHelper, AXHAServer, 
+                       AXHASettings, AXHASettingsListenerHelper, AXHeardController, 
+                       AXHearingAidDevice, AXHearingAidDeviceController, AXHearingAidMode, 
+                       AXHearingSlaveController, AXPSAPDevice, AXRemoteHearingAidDevice, 
+                       HANanoSettings, HUDeviceController, HUFakeXPCClient, HUIDCManager, 
+                       HUIDCMessage, HUIDCPacket, HUIDCRemoteController, HUIDCSlaveController, 
+                       HUNearbyDevice, HUSimpleMessage, HUUtilities ]
+    objc-ivars:      [ AXFakeHearingAidDevice._leftFakePrograms, AXFakeHearingAidDevice._rightFakePrograms, 
+                       AXFakePSAPDevice._leftFakePrograms, AXFakePSAPDevice._rightFakePrograms, 
+                       HUIDCSlaveController._resolveTimer ]
+...

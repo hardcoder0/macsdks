@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           AEE84D6F-FF00-30AC-A470-04DA87E0BF0C
+  - target:          x86_64-maccatalyst
+    value:           AEE84D6F-FF00-30AC-A470-04DA87E0BF0C
+install-name:    '/System/Library/PrivateFrameworks/Netrb.framework/Versions/A/Netrb'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _NETRBClientSendNotification, _NETRBDebugLog, _NETRBEndPointCleanup, 
+                       _NETRBErrorLog, _NETRBInfoLog, _NETRBLogCreate, _NETRBNoticeLog, 
+                       _NETRBXPCCleanup, _NETRBXPCCreate, _NETRBXPCEndPointCreate, 
+                       _NETRBXPCSetupAndSend, _NetrbVersionNumber, _NetrbVersionString, 
+                       __NETRBClientAddPortForwardingRule, __NETRBClientCopyFixtureForwardedPorts, 
+                       __NETRBClientCreate, __NETRBClientDestroy, __NETRBClientGetDynamicStoreKey, 
+                       __NETRBClientGetExtName, __NETRBClientGetPortForwardingRules, 
+                       __NETRBClientNewInterface, __NETRBClientRemovePortForwardingRule, 
+                       __NETRBClientSetFixtureForwardedPorts, __NETRBClientStartService, 
+                       __NETRBClientStopService, __NETRBPortForwardingDictGetDetails, 
+                       _netrbClientAllocateMACAddress, _netrbClientAnyExternal, _netrbClientDeviceType, 
+                       _netrbClientDns64Prefix, _netrbClientExternalInterface, _netrbClientForwardedHighPort, 
+                       _netrbClientForwardedLowPort, _netrbClientInterfaceEndAddress, 
+                       _netrbClientInterfaceInstance, _netrbClientInterfaceMTU, _netrbClientInterfaceName, 
+                       _netrbClientInterfaceNetworkMask, _netrbClientInterfaceSpeed, 
+                       _netrbClientInterfaceStartAddress, _netrbClientMACAddress, 
+                       _netrbClientMACUUID, _netrbClientNat64Param, _netrbClientNat66Param, 
+                       _netrbClientNatType, _netrbClientNotificationKey, _netrbClientRaPrefix, 
+                       _netrbClientRaPrefixLen, _netrbClientSocketFD ]
+...

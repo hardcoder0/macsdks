@@ -1,0 +1,9 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           FFB409AD-E344-3CF2-B76F-0FAEAAAB46E9
+install-name:    '/System/Library/PrivateFrameworks/WebInspectorUI.framework/Versions/A/WebInspectorUI'
+current-version: 609.3.5
+...

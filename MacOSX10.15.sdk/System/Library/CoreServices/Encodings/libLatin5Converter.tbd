@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           EDB1E70D-DECF-3E94-AAEC-F897E352F565
+  - target:          x86_64-maccatalyst
+    value:           EDB1E70D-DECF-3E94-AAEC-F897E352F565
+install-name:    '/System/Library/CoreServices/Encodings/libLatin5Converter.dylib'
+current-version: 76
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ ___CFStringEncodingGetLatin5ConverterDefinition ]
+...

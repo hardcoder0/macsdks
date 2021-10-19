@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           B7CA7154-D889-3777-869A-F36D8F7C14AA
+  - target:          x86_64-maccatalyst
+    value:           B7CA7154-D889-3777-869A-F36D8F7C14AA
+install-name:    '/System/Library/PrivateFrameworks/SecureChannel.framework/Versions/A/SecureChannel'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    objc-classes:    [ SecureChannelAction, SecureChannelController ]
+...

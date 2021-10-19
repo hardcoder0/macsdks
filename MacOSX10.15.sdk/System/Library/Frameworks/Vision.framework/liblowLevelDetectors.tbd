@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           333CDB63-B27F-3A1D-AEB6-F1DEE36E1987
+install-name:    '/System/Library/Frameworks/Vision.framework/liblowLevelDetectors.dylib'
+current-version: 3.0.97
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _CCRectLowLevel, _createPerMeshForFFTSIZE, _horizonDetectionFFT, 
+                       _horizonDetectionFFTAngles, _initializePerMesh ]
+...

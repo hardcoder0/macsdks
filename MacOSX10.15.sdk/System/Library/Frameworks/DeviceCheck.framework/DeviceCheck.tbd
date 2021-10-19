@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           887E7380-5BCC-3C28-8925-0135A6D5751B
+  - target:          x86_64-maccatalyst
+    value:           887E7380-5BCC-3C28-8925-0135A6D5751B
+install-name:    '/System/Library/Frameworks/DeviceCheck.framework/Versions/A/DeviceCheck'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _DCErrorDomain, __DCLogSystem ]
+    objc-classes:    [ DCContext, DCDevice, DCDeviceMetadataInterface ]
+...

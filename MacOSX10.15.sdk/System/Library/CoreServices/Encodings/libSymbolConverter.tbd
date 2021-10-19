@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           40AFFB4F-3A3C-3F78-ADAE-055D3F2B4B98
+  - target:          x86_64-maccatalyst
+    value:           40AFFB4F-3A3C-3F78-ADAE-055D3F2B4B98
+install-name:    '/System/Library/CoreServices/Encodings/libSymbolConverter.dylib'
+current-version: 76
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ ___CFStringEncodingGetSymbolConverterDefinition ]
+...

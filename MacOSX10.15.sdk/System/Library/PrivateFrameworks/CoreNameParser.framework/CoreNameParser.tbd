@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           EE3A975D-D678-3F81-9EDE-2D394232A5C9
+  - target:          x86_64-maccatalyst
+    value:           EE3A975D-D678-3F81-9EDE-2D394232A5C9
+install-name:    '/System/Library/PrivateFrameworks/CoreNameParser.framework/Versions/A/CoreNameParser'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ __NPCollapseWhitespaceAndStrip, __NPRemoveAppSignature, __NPRemoveEmojis, 
+                       __NPRemoveParenthesisBracketsAndInside, __NPStripDiatritics, 
+                       __NPStripQuotationMarks, __NPTokenizeName, __NPTrimNonLetters, 
+                       _charSetWithEndpoints ]
+    objc-classes:    [ NPComponentSequence, NPHMMClassifier, NPNameComponentsData, 
+                       NPNameParser ]
+...

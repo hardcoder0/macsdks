@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           A4B3BE51-EED8-37A7-B503-906F4026C2A4
+install-name:    '/System/Library/Frameworks/Message.framework/Versions/B/Message'
+current-version: 1604
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _MessageVersionNumber, _MessageVersionString ]
+...

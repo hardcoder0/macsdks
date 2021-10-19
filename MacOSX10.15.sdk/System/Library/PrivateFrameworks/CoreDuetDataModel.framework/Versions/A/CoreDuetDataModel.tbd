@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           C24A4702-6251-3316-9544-25D75EEFF9C7
+  - target:          x86_64-maccatalyst
+    value:           C24A4702-6251-3316-9544-25D75EEFF9C7
+install-name:    '/System/Library/PrivateFrameworks/CoreDuetDataModel.framework/Versions/A/CoreDuetDataModel'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    objc-classes:    [ CDDMAirplaneModeEvent, CDDMAppNameMapper, CDDMAppStateChangeEvent, 
+                       CDDMAttributeNameMapper, CDDMBacklightEvent, CDDMBatteryEvent, 
+                       CDDMBookkeeping, CDDMBootOrShutdownEvent, CDDMDeviceEvent, 
+                       CDDMDeviceMapper, CDDMForecast, CDDMForecastInteger, CDDMForecastReal, 
+                       CDDMForecastScore, CDDMForecastString, CDDMIntegerAttribute, 
+                       CDDMPluginEvent, CDDMPool, CDDMPoolNameMapper, CDDMRealAttribute, 
+                       CDDMScreenLockEvent, CDDMSleepOrWakeEvent, CDDMStatisticInteger, 
+                       CDDMStatisticReal, CDDMStatisticString, CDDMStringAttribute, 
+                       CDDMThermalEvent, CDDMWakednessEvent ]
+...

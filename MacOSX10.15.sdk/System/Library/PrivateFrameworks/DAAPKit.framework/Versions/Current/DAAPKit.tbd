@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           DDF5C070-7625-32AD-8EEE-EE41D397C804
+  - target:          x86_64-maccatalyst
+    value:           DDF5C070-7625-32AD-8EEE-EE41D397C804
+install-name:    '/System/Library/PrivateFrameworks/DAAPKit.framework/Versions/A/DAAPKit'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _DKDAAPParserErrorDomain, _DKDAAPWriterErrorDomain, _DKParseUtilitiesCopyStringFromBytes, 
+                       _NSStringFromDAAPCode, _NSStringFromDAAPValueType ]
+    objc-classes:    [ DKDAAPParser, DKDAAPWriter ]
+...

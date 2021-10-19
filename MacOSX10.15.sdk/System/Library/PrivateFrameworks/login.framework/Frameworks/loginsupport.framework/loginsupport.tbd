@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           12F77885-27DC-3837-9CE9-A25EBA75F833
+  - target:          x86_64-maccatalyst
+    value:           12F77885-27DC-3837-9CE9-A25EBA75F833
+install-name:    '/System/Library/PrivateFrameworks/login.framework/Versions/A/Frameworks/loginsupport.framework/Versions/A/loginsupport'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _DBLoggerMaxFlag, _DBLoggerStartFlag, _DBLoggingGetMaskForController, 
+                       _DBLoggingLogWithFormat, _DBLoggingSetLogFileForController, 
+                       _DBLoggingSetMaskForController, _DBLoggingSetSignalEnabled, 
+                       _DBLoggingStartWithController, _DBLoggingStop, _DBLoggingStopController, 
+                       _gDBLoggingMasks, _kUnknownFacility, _kUnknownProcess ]
+...

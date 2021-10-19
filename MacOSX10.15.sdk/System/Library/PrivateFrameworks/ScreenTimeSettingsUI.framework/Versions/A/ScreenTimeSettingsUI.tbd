@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           9433CD91-50A9-3B8D-B5F8-DE47C1FACAE5
+install-name:    '/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework/Versions/A/ScreenTimeSettingsUI'
+current-version: 440
+allowable-clients:
+  - targets:         [ x86_64-macos ]
+    clients:         [ ScreenTime ]
+exports:
+  - targets:         [ x86_64-macos ]
+    objc-classes:    [ STAlwaysAllowedController, STAlwaysAllowedItem, STContentAndPrivacyController, 
+                       STControlProtection, STDowntimeCommunicationViewController, 
+                       STKeyValuePair, STProtectedButton, STProtectedDatePicker, 
+                       STProtectedPopUpButton, STProtectedSegmentedControl, STRequestItem, 
+                       STRequestsController, STScreenTimeCommunicationViewController, 
+                       STUsersController ]
+...

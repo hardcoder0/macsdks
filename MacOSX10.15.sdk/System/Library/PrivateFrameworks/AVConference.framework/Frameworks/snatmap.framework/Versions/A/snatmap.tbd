@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           75EC60FA-F477-333A-8969-2074416711CE
+  - target:          x86_64-maccatalyst
+    value:           75EC60FA-F477-333A-8969-2074416711CE
+install-name:    '/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/snatmap.framework/Versions/A/snatmap'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _GetSNATMAPServer, _ProcessSNATMAPResponse, _SNATMAP_GetNonceValue, 
+                       _SNATMAP_IsEqualNonce, _SNATMAP_MakeRequest ]
+...

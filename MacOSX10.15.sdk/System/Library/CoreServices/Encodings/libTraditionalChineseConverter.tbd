@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           AE28CE00-994E-3D79-A716-6B2694F42BD0
+  - target:          x86_64-maccatalyst
+    value:           AE28CE00-994E-3D79-A716-6B2694F42BD0
+install-name:    '/System/Library/CoreServices/Encodings/libTraditionalChineseConverter.dylib'
+current-version: 76
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ ___CFStringEncodingGetTraditionalChineseConverterDefinition ]
+...

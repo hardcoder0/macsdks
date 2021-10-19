@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           DFD681C6-6413-3B0C-836F-551734355590
+  - target:          x86_64-maccatalyst
+    value:           DFD681C6-6413-3B0C-836F-551734355590
+install-name:    '/usr/lib/swift/libswiftCallKit.dylib'
+current-version: 0
+swift-abi-version: 7
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ '$ld$install_name$os10.10$@rpath/libswiftCallKit.dylib', '$ld$install_name$os10.11$@rpath/libswiftCallKit.dylib', 
+                       '$ld$install_name$os10.12$@rpath/libswiftCallKit.dylib', '$ld$install_name$os10.13$@rpath/libswiftCallKit.dylib', 
+                       '$ld$install_name$os10.14$@rpath/libswiftCallKit.dylib', '$ld$install_name$os10.9$@rpath/libswiftCallKit.dylib', 
+                       '_$sSo23CXProviderConfigurationC7CallKitE20supportedHandleTypesShySo12CXHandleTypeVGvM', 
+                       '_$sSo23CXProviderConfigurationC7CallKitE20supportedHandleTypesShySo12CXHandleTypeVGvg', 
+                       '_$sSo23CXProviderConfigurationC7CallKitE20supportedHandleTypesShySo12CXHandleTypeVGvpMV', 
+                       '_$sSo23CXProviderConfigurationC7CallKitE20supportedHandleTypesShySo12CXHandleTypeVGvs', 
+                       '__swift_FORCE_LOAD_$_swiftCallKit' ]
+...

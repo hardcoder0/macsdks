@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           487F18D9-A81A-3575-B757-38DE5DD1FB55
+  - target:          x86_64-maccatalyst
+    value:           487F18D9-A81A-3575-B757-38DE5DD1FB55
+install-name:    '/System/Library/PrivateFrameworks/SafariFoundation.framework/Versions/A/SafariFoundation'
+current-version: 609.3.5
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _SFAutoFillFromAddressBookPreferenceKey, _SFCredentialProviderDeveloperEntitlement, 
+                       _SFCredentialProviderExtensionPointIdentifier, _SFCredentialProviderShowsConfigurationUIKey, 
+                       _SFCredentialProviderSystemEntitlement, _SFExternalCredentialIdentityStoreErrorDomain, 
+                       _SFPasswordCredentialIdentityInvalidRowIdentifier, _SFPasswordGenerationNoLengthLimit, 
+                       _SFSharablePasswordURLSchemeForAirDrop, _maximumNumberOfWebCredentialEntriesToReturnForAppID ]
+    objc-classes:    [ SFAutoFillFeatureManager, SFCredentialProviderExtensionState, 
+                       SFDomainAssociationUtilities, SFPasswordCredentialIdentity, 
+                       SFSafariCredential, SFSafariCredentialStore, SFSharablePassword, 
+                       SFSharablePasswordReceiver, SFSharedWebCredentialsDatabaseEntry, 
+                       SFStrongPasswordGenerator, SFSuggestedUser, SFSuggestedUserProvider, 
+                       _SFSharablePasswordEncryptionInformation ]
+...

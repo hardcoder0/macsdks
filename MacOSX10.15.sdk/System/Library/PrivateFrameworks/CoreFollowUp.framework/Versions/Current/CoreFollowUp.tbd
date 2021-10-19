@@ -1,0 +1,34 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           6D4DFF4B-B62D-31E9-9FB9-60553578338E
+install-name:    '/System/Library/PrivateFrameworks/CoreFollowUp.framework/Versions/A/CoreFollowUp'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _CoreFollowUpVersionNumber, _CoreFollowUpVersionString, _FLDaemonExportedInterface, 
+                       _FLError, _FLErrorDomain, _FLFollowUpActionLaunchArgumentsKey, 
+                       _FLFollowUpBridgeBundleIdentifier, _FLFollowUpBridgeUrlPrefix, 
+                       _FLFollowUpItemsKey, _FLFollowUpNotificationBundleIdentifier, 
+                       _FLFollowUpNotificationDefaultCategory, _FLFollowUpNotificationSampleCategory, 
+                       _FLFollowUpPreferencesBundleIdentifier, _FLFollowUpPreferencesIdentifierPrefix, 
+                       _FLFollowUpPreferencesUrlPrefix, _FLFollowUpSingleActionKey, 
+                       _FLFollowUpSingleItemKey, _FLFollowUpViewModelKey, _FLGroupIdentifierAccount, 
+                       _FLGroupIdentifierDevice, _FLGroupIdentifierUnknown, _FLHSA2ActionChangePassword, 
+                       _FLInternalItemWhitelistWarning, _FLItemRefreshResultFailure, 
+                       _FLItemRefreshResultRemoved, _FLItemRefreshResultSuccess, 
+                       _FLLoc, _FLLocDeviceSpecific, _FLNotificationOptionBannerAlert, 
+                       _FLNotificationOptionExtensionActions, _FLNotificationOptionForce, 
+                       _FLNotificationOptionLockscreen, _FLNotificationOptionNotificationCenter, 
+                       _FLNotificationOptionSpringboardAlert, __FLLocKeyFromDeviceClass, 
+                       __FLLogSystem, __FLLogSystemQuery, __FLSignpostCreate, __FLSignpostGetNanoseconds, 
+                       __FLSignpostLogSystem ]
+    objc-classes:    [ FLApprovedItemsDecorator, FLApprovedItemsFilter, FLConstants, 
+                       FLDaemon, FLEnvironment, FLExtensionHostContext, FLFollowUpAction, 
+                       FLFollowUpController, FLFollowUpItem, FLFollowUpNotification, 
+                       FLGroupViewModelImpl, FLHSA2LoginNotification, FLHSA2PasswordResetNotification, 
+                       FLHeadlessActionHandler, FLHeadlessExtensionLoader, FLItemChangeObserver, 
+                       FLItemDetailViewModel, FLTelemetryFactory, FLTelemetryProcessor, 
+                       FLTopLevelViewModel, FLUIHelperController, FLUtilities ]
+...

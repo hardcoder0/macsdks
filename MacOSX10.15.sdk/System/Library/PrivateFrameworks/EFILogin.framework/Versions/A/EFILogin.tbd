@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           3BFE697B-469F-38F4-B380-4A4F4A37C836
+install-name:    '/System/Library/PrivateFrameworks/EFILogin.framework/Versions/A/EFILogin'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _EFILoginCopyGraphics, _EFILoginCopyInterfaceGraphics, _EFILoginCopyNotificationMessageGraphics, 
+                       _EFILoginCopyRegistryString, _EFILoginCopyUserGraphics, _EFILoginCopyUserGraphicsForVolume, 
+                       _EFILoginCopyUserNamesData, _EFILoginGraphicsIsUpToDate, _kEFILoginDataKey, 
+                       _kEFILoginFileNameKey, _kEFILoginRecoveryServiceLocationKey, 
+                       _kEFILoginRecoveryServiceRecordNumberKey, _kEFILoginRecoveryServiceRedirectURLKey, 
+                       _kEFILoginRecoveryServiceSerialNumberKey ]
+    objc-classes:    [ EFILWLogging ]
+...

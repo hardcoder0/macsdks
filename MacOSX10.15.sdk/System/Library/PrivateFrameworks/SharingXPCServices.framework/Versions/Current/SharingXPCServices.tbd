@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           C0EBC4DE-0D53-33F6-A48A-34215E962A90
+install-name:    '/System/Library/PrivateFrameworks/SharingXPCServices.framework/Versions/A/SharingXPCServices'
+current-version: 1526.37
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _SharingXPCServicesVersionNumber, _SharingXPCServicesVersionString ]
+...

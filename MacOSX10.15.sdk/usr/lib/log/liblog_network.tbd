@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           CF1DA3B7-09BC-3B63-8782-F07E020D5F1F
+  - target:          x86_64-maccatalyst
+    value:           CF1DA3B7-09BC-3B63-8782-F07E020D5F1F
+install-name:    '/usr/lib/log/liblog_network.dylib'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _OSLogCopyFormattedString ]
+...

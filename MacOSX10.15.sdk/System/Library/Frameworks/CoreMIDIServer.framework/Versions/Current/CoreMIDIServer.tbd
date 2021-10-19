@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           14C22CDB-031B-3685-8095-9A1CD95D222A
+install-name:    '/System/Library/Frameworks/CoreMIDIServer.framework/Versions/A/CoreMIDIServer'
+current-version: 69
+reexported-libraries:
+  - targets:         [ x86_64-macos ]
+    libraries:       [ '/System/Library/Frameworks/CoreMIDI.framework/Versions/A/CoreMIDI' ]
+...

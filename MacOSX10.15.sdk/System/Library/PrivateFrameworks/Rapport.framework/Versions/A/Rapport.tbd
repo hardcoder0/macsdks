@@ -1,0 +1,48 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           AF01D899-3BF9-3586-860A-D95A837101DF
+  - target:          x86_64-maccatalyst
+    value:           AF01D899-3BF9-3586-860A-D95A837101DF
+install-name:    '/System/Library/PrivateFrameworks/Rapport.framework/Versions/A/Rapport'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _RPAppIDRemote, _RPAssertionDuckAudio, _RPAssertionImminentUse, 
+                       _RPAssertionKeepAlive, _RPBonjourFlagsUpdateWithRPCompanionLinkFlags, 
+                       _RPCloudServiceIDDuet, _RPCloudServiceIDNearby, _RPCompanionLinkFlagsToShortString, 
+                       _RPCompanionLinkFlagsWithUpdateBonjourFlags, _RPDecodeNSError, 
+                       _RPDestinationIdentifierActivePhone, _RPDestinationIdentifierActiveWatch, 
+                       _RPDestinationIdentifierDirectPeer, _RPDestinationIdentifierInterestedPeers, 
+                       _RPDestinationIdentifierPairedCompanion, _RPDestinationIdentifierPersonalCompanion, 
+                       _RPDestinationIdentifierSameHome, _RPDestinationIdentifierSameRoom, 
+                       _RPDestinationIdentifierSelf, _RPDestinationIdentifierStereoCounterpart, 
+                       _RPDeviceRoleSolo, _RPDeviceRoleStereoLeft, _RPDeviceRoleStereoRight, 
+                       _RPEncodeNSError, _RPErrorDomain, _RPErrorF, _RPEventIDAny, 
+                       _RPLegacyServiceTypeMobileDevice, _RPLegacyServiceTypeNearbyAction, 
+                       _RPLegacyServiceTypeNearbyInfo, _RPLegacyServiceTypeProximityPairing, 
+                       _RPLegacyServiceTypeSystem, _RPLegacyServiceTypeWACAirPlay, 
+                       _RPLegacyServiceTypeWACGeneric, _RPMessageKeySpeakText, _RPNestedErrorF, 
+                       _RPOptionAllowUnauthenticated, _RPOptionDataLinkType, _RPOptionEventID, 
+                       _RPOptionFailIfAsleep, _RPOptionInterest, _RPOptionLength, 
+                       _RPOptionMoreComing, _RPOptionPeerAddressString, _RPOptionRequestID, 
+                       _RPOptionSelfAddressString, _RPOptionSenderID, _RPOptionSenderIDSDeviceID, 
+                       _RPOptionStatusFlags, _RPOptionTimeoutSeconds, _RPOptionXID, 
+                       _RPProfileIDDuetSync, _RPRequestIDAny, _RPRequestIDIdentify, 
+                       _RPRequestIDSpeak, _RPTopicNone, _RPTopicNowPlayingArtwork, 
+                       _RPTopicNowPlayingProgress, _RPTopicNowPlayingText, _gRPPrivateDaemon ]
+    objc-classes:    [ RPAppSignInService, RPClient, RPCompanionLinkAssertion, RPCompanionLinkClient, 
+                       RPCompanionLinkDevice, RPConnection, RPDevice, RPDiscovery, 
+                       RPEndpoint, RPEventRegistration, RPFileTransferItem, RPFileTransferProgress, 
+                       RPFileTransferSession, RPHIDSession, RPHIDTouchEvent, RPHIDTouchSession, 
+                       RPIdentity, RPLegacyDeviceDiscovery, RPLegacyService, RPLegacySession, 
+                       RPMediaControlSession, RPPeopleDiscovery, RPPerson, RPPrivateAdvertiser, 
+                       RPPrivateDiscovery, RPRemoteDisplayDevice, RPRemoteDisplayDiscovery, 
+                       RPRemoteDisplayServer, RPRemoteDisplaySession, RPRemoteXPCConnection, 
+                       RPRemoteXPCListener, RPRequestRegistration, RPServer, RPSession, 
+                       RPSiriAudioSession, RPSiriSession, RPStreamServer, RPStreamSession, 
+                       RPTextInputSession ]
+...

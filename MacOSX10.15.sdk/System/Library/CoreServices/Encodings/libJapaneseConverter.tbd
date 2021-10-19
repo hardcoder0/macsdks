@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           5804619A-0FCD-38FF-A66C-54E3EDFFE0C8
+  - target:          x86_64-maccatalyst
+    value:           5804619A-0FCD-38FF-A66C-54E3EDFFE0C8
+install-name:    '/System/Library/CoreServices/Encodings/libJapaneseConverter.dylib'
+current-version: 76
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ ___CFStringEncodingGetJapaneseConverterDefinition ]
+...

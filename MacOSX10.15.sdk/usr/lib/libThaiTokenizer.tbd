@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           4F4ADE99-0D09-3223-B7C0-C407AB6DE8DC
+  - target:          x86_64-maccatalyst
+    value:           4F4ADE99-0D09-3223-B7C0-C407AB6DE8DC
+install-name:    '/usr/lib/libThaiTokenizer.dylib'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _ThaiTokenizerAdvanceToNextToken, _ThaiTokenizerCreate, _ThaiTokenizerDestroy, 
+                       _ThaiTokenizerGetCurrentTokenRange, _ThaiTokenizerGoToTokenAtIndex, 
+                       _ThaiTokenizerSetString, _ThaiTokenizerSetStringWithRange ]
+...

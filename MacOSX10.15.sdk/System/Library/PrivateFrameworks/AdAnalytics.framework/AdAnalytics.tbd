@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           F8183AE0-436B-3BE5-89E5-5C1BFB3907BE
+  - target:          x86_64-maccatalyst
+    value:           F8183AE0-436B-3BE5-89E5-5C1BFB3907BE
+install-name:    '/System/Library/PrivateFrameworks/AdAnalytics.framework/Versions/A/AdAnalytics'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _AdAnalyticsErrorDomain, _AdAnalyticsVersionNumber, _AdAnalyticsVersionString ]
+    objc-classes:    [ AdAnalyticsCommon, AdAnalyticsEventInfo, AdAnalyzer ]
+...

@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           6619A9EE-9201-3712-8015-6B116CB428D4
+  - target:          x86_64-maccatalyst
+    value:           6619A9EE-9201-3712-8015-6B116CB428D4
+install-name:    '/System/Library/PrivateFrameworks/FoundInAppsPlugins.framework/Versions/A/FoundInAppsPlugins'
+current-version: 1052.34
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _FoundInAppsPluginsVersionNumber, _FoundInAppsPluginsVersionString ]
+    objc-classes:    [ FIAPHistoricalDataRequest, FIAPResult ]
+...

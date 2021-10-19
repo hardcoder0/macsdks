@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           2ECB83E9-A9F0-33C5-A1E9-00662C639E79
+install-name:    '/System/Library/PrivateFrameworks/AppleAppSupport.framework/Versions/A/AppleAppSupport'
+current-version: 1.4
+compatibility-version: 1.2
+reexported-libraries:
+  - targets:         [ x86_64-macos ]
+    libraries:       [ '/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore' ]
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _AppleAppSupportLivesOn ]
+...

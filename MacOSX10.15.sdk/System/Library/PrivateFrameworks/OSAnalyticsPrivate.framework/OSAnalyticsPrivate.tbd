@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           9669DF26-8234-3D55-A99B-41CACE6CC471
+install-name:    '/System/Library/PrivateFrameworks/OSAnalyticsPrivate.framework/Versions/A/OSAnalyticsPrivate'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _OSAnalyticsPrivateVersionNumber, _OSAnalyticsPrivateVersionString ]
+    objc-classes:    [ OSAEphemeralLog, OSAHttpSubmitter, OSALegacyXform, OSAStreamDeflater, 
+                       OSASubmissionPolicy, OSASubmitter, PCCBridgeEndpoint, PCCEndpoint, 
+                       PCCGroupJob, PCCJob, PCCProxiedDevice, PCCProxyingDevice, 
+                       PCCRequest ]
+    objc-ivars:      [ OSASubmitter._dryRun, OSASubmitter._responseCode, OSASubmitter._responseData, 
+                       OSASubmitter._responseError, OSASubmitter._responseHeaders, 
+                       PCCEndpoint._delegate, PCCJob._errObj, PCCJob._package ]
+...

@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           A4CCA6A1-2A94-3063-BDCD-F14C9EEAFBAD
+install-name:    '/usr/lib/libnfrestore.dylib'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _NfJcopUpdateFileClose, _NfJcopUpdateFileGetPlan, _NfJcopUpdateFileGetRequiredMemoryForPlan, 
+                       _NfJcopUpdateFileGetSequenceForPlan, _NfJcopUpdateFileLogDescription, 
+                       _NfJcopUpdateFileOpenWithData, _NfJcopUpdateFileOpenWithFilePath, 
+                       _NfJcopUpdateFileReadCommand, _NfRestore, _NfRestoreBundleCreate, 
+                       _NfRestoreBundleScan, _NfRestoreCopyUniqueFDRKey, _NfRestoreDumpUART, 
+                       _NfRestoreOpenWithSE, _NfRestoreOpenWithSEAndResult, _NfRestoreReturnError, 
+                       _NfRestoreSEClose, _NfRestoreSEEnumerate, _NfRestoreSEList, 
+                       _NfRestoreSEOpen, _NfRestoreSEOpenWithError, _NfRestoreSETransceive, 
+                       _NfRestoreToggleDwnldReq, _NfRestoreToggleSEPower ]
+...

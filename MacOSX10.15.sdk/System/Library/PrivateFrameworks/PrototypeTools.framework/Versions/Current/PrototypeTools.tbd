@@ -1,0 +1,34 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           B7B382B9-A634-388A-967F-CA093E903B1B
+  - target:          x86_64-maccatalyst
+    value:           B7B382B9-A634-388A-967F-CA093E903B1B
+install-name:    '/System/Library/PrivateFrameworks/PrototypeTools.framework/Versions/A/PrototypeTools'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _PTClassIsPlistable, _PTDomainClientInterface, _PTDomainIdentifierKey, 
+                       _PTDomainMachService, _PTDomainServerActiveTestRecipeChangedNotification, 
+                       _PTDomainServerDomainsChangedNotification, _PTDomainServerInterface, 
+                       _PTDomainServerSettingsProxyDefinitionChangedNotification, 
+                       _PTDomainServerTestRecipesChangedNotification, _PTDomainSettingsProxyDefinitionKey, 
+                       _PTEqualFloats, _PTLogObjectForTopic, _PTObjectIsRecursivelyPlistable, 
+                       _PTPlistableClasses, _PTPrototypingEnumerateHardwareEventsWithBlock, 
+                       _PTPrototypingEventAvailable, _PTPrototypingEventName, _PTPrototypingEventShortName, 
+                       _PTPrototypingEventsDescription, _PTPrototypingIsActiveDarwinNotification, 
+                       _PTRowActionClassIsWhitelistedForRemoteEditing, _PTRowClassIsWhitelistedForRemoteEditing, 
+                       _PTSettingsIsAppleInternal, _PTTransactionBegin, _PTTransactionEnd, 
+                       _PTValidateArray, _PTValidateDictionary, _PTValidateSet ]
+    objc-classes:    [ PTButtonRow, PTChoiceRow, PTDefaults, PTDomain, PTDomainInfo, 
+                       PTDomainServer, PTDoubleTestRecipe, PTDrillDownRow, PTEditFloatRow, 
+                       PTEditStringRow, PTModule, PTOutlet, PTPointSettings, PTProxySettings, 
+                       PTProxySettingsDefinition, PTRestoreDefaultSettingsRowAction, 
+                       PTRow, PTRowAction, PTSButtonRow, PTSChoiceRow, PTSDrillDownRow, 
+                       PTSEditFloatRow, PTSEditStringRow, PTSModule, PTSRestoreDefaultSettingsRowAction, 
+                       PTSRow, PTSRowAction, PTSSection, PTSSliderRow, PTSSwitchRow, 
+                       PTSection, PTSettings, PTSettingsClassStructure, PTSingleTestRecipe, 
+                       PTSizeSettings, PTSliderRow, PTSwitchRow, PTTestRecipe, PTTestRecipeInfo, 
+                       PTToggleTestRecipe ]
+...

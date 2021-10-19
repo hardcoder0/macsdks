@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           45BBE80A-C077-312E-BE88-C6C34C90D549
+install-name:    '/System/Library/PrivateFrameworks/IDSSystemPreferencesSignIn.framework/Versions/A/IDSSystemPreferencesSignIn'
+current-version: 800
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _IDSSignInAccountsWithSystemPreferencesCredentials ]
+...

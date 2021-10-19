@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           8BF69C3F-3DDF-32F7-A7B7-3AEE5AA7A118
+install-name:    '/System/Library/PrivateFrameworks/CSCSupport.framework/Versions/A/CSCSupport'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _CSCEnableMobileStorageMounting ]
+...

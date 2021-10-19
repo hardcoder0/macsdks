@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           B042F277-E604-3E14-9E91-D9F445D1CA47
+install-name:    '/System/Library/PrivateFrameworks/AccessibilityPerformance.framework/Versions/A/AccessibilityPerformance'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _AXPLoggingDefaultCategory, _AXPLoggingDefaultSubsystem, _AccessibilityPerformanceVersionNumber, 
+                       _AccessibilityPerformanceVersionString, _axp_log_performance ]
+    objc-classes:    [ AXPSignpostEvent, AXPSignpostEventResult, AXPSignpostEventSummary, 
+                       AXPSignpostParser, AXPSignpostParserConfiguration, AXPSignpostResult, 
+                       AXPSignpostSender, AXPSignpostSubsystemCategoryFilter, AXPSignpostTestUtility, 
+                       AXPSignpostUtility ]
+...

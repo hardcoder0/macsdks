@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           A9E4C352-238B-3DED-BD85-9B7E20B078F5
+  - target:          x86_64-maccatalyst
+    value:           A9E4C352-238B-3DED-BD85-9B7E20B078F5
+install-name:    '/System/Library/PrivateFrameworks/AdPlatformsInternal.framework/Versions/A/AdPlatformsInternal'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _AdPlatformsInternalVersionNumber, _AdPlatformsInternalVersionString ]
+    objc-classes:    [ ADAttributionRequester, ADAttributionService ]
+...

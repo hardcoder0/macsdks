@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           56054FDD-680D-3D73-B5AD-6F8E0853F002
+install-name:    '/usr/lib/system/libunc.dylib'
+current-version: 30
+parent-umbrella:
+  - targets:         [ x86_64-macos ]
+    umbrella:        System
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _uncVersionNumber, _uncVersionString ]
+...

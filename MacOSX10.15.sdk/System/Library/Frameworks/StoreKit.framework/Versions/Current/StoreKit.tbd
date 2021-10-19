@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           D39EA2FD-A7E7-341F-80BD-18912272CAFE
+install-name:    '/System/Library/Frameworks/StoreKit.framework/Versions/A/StoreKit'
+current-version: 379
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _SKDownloadTimeRemainingUnknown, _SKErrorDomain, _SKReceiptPropertyIsExpired, 
+                       _SKReceiptPropertyIsRevoked, _SKReceiptPropertyIsVolumePurchase, 
+                       _SKTerminateForInvalidReceipt, _SKUIServiceNavigationOptionBackButtonHidden, 
+                       _SKUIServiceNavigationOptionBackButtonTitle, _SKUIServiceNavigationOptionRightButtonEnabled, 
+                       _SKUIServiceNavigationOptionRightButtonStyle, _SKUIServiceNavigationOptionRightButtonTitle, 
+                       _SKUIServiceNavigationOptionTitle, _SKUIServiceReviewSandboxMode ]
+    objc-classes:    [ SKArcadeService, SKCloudServiceSetupConfiguration, SKDownload, 
+                       SKInGameAnalytics, SKMutablePayment, SKPayment, SKPaymentDiscount, 
+                       SKPaymentQueue, SKPaymentQueueClient, SKPaymentTransaction, 
+                       SKProduct, SKProductDiscount, SKProductSubscriptionPeriod, 
+                       SKProductsRequest, SKProductsResponse, SKReceiptRefreshRequest, 
+                       SKRequest, SKStoreReviewController, SKStorefront ]
+...

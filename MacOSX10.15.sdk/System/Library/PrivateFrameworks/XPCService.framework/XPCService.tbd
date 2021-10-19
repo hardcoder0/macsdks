@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           2F68BF55-A964-3609-89D8-7008447F04FD
+install-name:    '/System/Library/PrivateFrameworks/XPCService.framework/Versions/A/XPCService'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _XPCServiceBundleExtention, _XPCServiceBundleInfoDictionaryKey, 
+                       _XPCServiceDictionaryAdditionalServicesKey, _XPCServiceDictionaryAllowedClientsKey, 
+                       _XPCServiceDictionaryDirtyJetsamMemoryLimit, _XPCServiceDictionaryDirtyJetsamPriority, 
+                       _XPCServiceDictionaryEnvironmentVariablesKey, _XPCServiceDictionaryJoinExistingSessionKey, 
+                       _XPCServiceDictionaryMultipleInstancesKey, _XPCServiceDictionaryRoleAccountKey, 
+                       _XPCServiceDictionaryRunloopTypeKey, _XPCServiceDictionarySandboxProfileKey, 
+                       _XPCServiceDictionaryServiceTypeKey, _XPCServiceDictionaryUseNSApplicationMainKey, 
+                       _XPCServiceVersionNumber, _XPCServiceVersionString, __xpc_main, 
+                       _connectionEvaluator, _xpc_service_main ]
+    objc-classes:    [ XPCServiceBundle, XPCServiceRuntime ]
+    objc-ivars:      [ XPCServiceBundle._bundle, XPCServiceBundle._executablePath, 
+                       XPCServiceBundle._executablePathPredicate, XPCServiceBundle._launchdJobDictionary, 
+                       XPCServiceBundle._launchdJobDictionaryPredicate, XPCServiceBundle._realExecutablePath, 
+                       XPCServiceBundle._realExecutablePathPredicate, XPCServiceBundle._serviceDictionary, 
+                       XPCServiceBundle._serviceDictionaryPredicate, XPCServiceBundle._serviceIdentifier, 
+                       XPCServiceBundle._serviceIdentifierPredicate, XPCServiceBundle._serviceType, 
+                       XPCServiceBundle._serviceTypePredicate, XPCServiceBundle._xpcJobData, 
+                       XPCServiceBundle._xpcJobDataPredicate, XPCServiceRuntime._entitlements ]
+...

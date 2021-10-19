@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           1BC7D355-E136-391A-8215-6982742645DD
+  - target:          x86_64-maccatalyst
+    value:           1BC7D355-E136-391A-8215-6982742645DD
+install-name:    '/System/Library/PrivateFrameworks/IntentsFoundation.framework/Versions/A/IntentsFoundation'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _IFMergeDictionaries, _IntentsFoundationVersionNumber, _IntentsFoundationVersionString ]
+    objc-classes:    [ IFObjectHasher, INFGrammarCollection, INFPartOfSpeech, INFSentence, 
+                       INFSentenceToken ]
+...

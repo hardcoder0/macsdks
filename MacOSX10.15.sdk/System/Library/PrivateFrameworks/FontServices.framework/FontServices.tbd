@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           8E17A3DD-A754-3F57-B253-9C8B5506BE1A
+  - target:          x86_64-maccatalyst
+    value:           8E17A3DD-A754-3F57-B253-9C8B5506BE1A
+install-name:    '/System/Library/PrivateFrameworks/FontServices.framework/Versions/A/FontServices'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _FontServicesVersionNumber, _FontServicesVersionString ]
+...

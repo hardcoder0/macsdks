@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           F45AFD70-E4DD-3ABB-AA00-6563A841184B
+  - target:          x86_64-maccatalyst
+    value:           F45AFD70-E4DD-3ABB-AA00-6563A841184B
+install-name:    '/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/3902/Libraries/libmetal_timestamp.dylib'
+current-version: 902.14.11
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _getMetalTimeStamp ]
+...

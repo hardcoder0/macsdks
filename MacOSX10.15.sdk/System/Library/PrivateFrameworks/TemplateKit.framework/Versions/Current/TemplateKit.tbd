@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           7D07923D-BE1D-3CA8-B030-7D427FAFFCDA
+install-name:    '/System/Library/PrivateFrameworks/TemplateKit.framework/Versions/A/TemplateKit'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _TLKDefaultCornerRadius, _TLKDefaultDimension, _TLKDefaultSize, 
+                       _TLKMinimumHorizontalSpacingBetweenImageAndText, _TLKMinimumHorizontalSpacingBetweenSmallImageAndText, 
+                       _TLKMinimumHorizontalSpacingBetweenText, _TLKMinimumVerticalSpacingBetweenTextBaselineAndImage, 
+                       _TemplateKitVersionNumber, _TemplateKitVersionString ]
+    objc-classes:    [ TLKActivityIndicatorView, TLKAppearance, TLKAuxilliaryTextView, 
+                       TLKButton, TLKDescriptionView, TLKDetailsSection, TLKDetailsView, 
+                       TLKEmbossedLabel, TLKEnlargedTitleView, TLKFontUtilities, 
+                       TLKFormattedText, TLKFormattedTextItem, TLKGridLayoutManager, 
+                       TLKGridRowView, TLKHeaderView, TLKIcon, TLKImage, TLKImageAttachment, 
+                       TLKImageView, TLKImagesView, TLKInlineImage, TLKInlineRoundedText, 
+                       TLKKeyValueTuple, TLKKeyValueView, TLKLabel, TLKLayoutUtilities, 
+                       TLKMediaInfoView, TLKMultilineText, TLKNumericalResultView, 
+                       TLKObject, TLKPassThroughScrollView, TLKProminenceView, TLKRichText, 
+                       TLKRoundedCornerLabel, TLKSButton, TLKSectionHeaderView, TLKSelectableGridTuple, 
+                       TLKSelectableGridView, TLKSimpleRowView, TLKSplitHeaderView, 
+                       TLKStackView, TLKStars, TLKStoreButton, TLKTableCellView, 
+                       TLKTableColumnAlignment, TLKTableHeaderRow, TLKTableRow, TLKTableViewController, 
+                       TLKTextAreaView, TLKTextButton, TLKTextView, TLKTitleContainerView, 
+                       TLKUtilities, TLKView ]
+...

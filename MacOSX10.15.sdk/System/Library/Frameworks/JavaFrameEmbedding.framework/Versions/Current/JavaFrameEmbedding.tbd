@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           1B738549-26C6-3C2F-9F30-B20A979848B1
+install-name:    '/System/Library/Frameworks/JavaFrameEmbedding.framework/Versions/A/JavaFrameEmbedding'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _JavaFrameViewDidCreateJavaFrame ]
+    objc-classes:    [ JavaFrameView ]
+...

@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           223FF7F1-4ABB-3179-B36D-5F4CEE177243
+  - target:          x86_64-maccatalyst
+    value:           223FF7F1-4ABB-3179-B36D-5F4CEE177243
+install-name:    '/usr/lib/libAudioIssueDetector.dylib'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _AudioDataAnalysisManagerCreate, _AudioDataAnalysisManagerCreateNodeEnvSPL, 
+                       _AudioDataAnalysisManagerCreateNodePCM, _AudioDataAnalysisManagerCreateNodeSPL, 
+                       _AudioDataAnalysisManagerDispose, _AudioDataAnalysisManagerInitialize, 
+                       _AudioDataAnalysisManagerProcessAudio, _AudioDataAnalysisManagerProcessEnvSPL, 
+                       _AudioDataAnalysisManagerProcessSPL, _AudioDataAnalysisManagerRemoveNode, 
+                       _AudioDataAnalysisManagerReset, _AudioDataAnalysisManagerSetDeviceInfo, 
+                       _AudioDataAnalysisManagerUpdateReportingSessions, _AudioIssueDetectorAnalyzeBuffer, 
+                       _AudioIssueDetectorCreate, _AudioIssueDetectorDispose, _AudioIssueDetectorInitialize, 
+                       _AudioIssueDetectorRemoveNode, _AudioIssueDetectorReset, _AudioIssueDetectorSetDownlinkVolume, 
+                       _AudioIssueDetectorSetNodeFormat, _AudioIssueDetectorSetNodeFormatWithDirection, 
+                       _AudioIssueDetectorSetRouteSpecificDownlinkGainAdjustment, 
+                       _AudioIssueDetectorSetSmartCaseMicMute, _AudioIssueDetectorSetUplinkMute, 
+                       _AudioIssueDetectorUpdateReportingSessions, _EnvironmentalDosimetryAgentCreate, 
+                       _EnvironmentalDosimetryAgentDispose ]
+...

@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           D4344C01-5B2B-3986-BFF8-AB306F53F6C3
+install-name:    '/System/Library/PrivateFrameworks/AppleMediaServicesUI.framework/Versions/A/AppleMediaServicesUI'
+exports:
+  - targets:         [ x86_64-macos ]
+    objc-classes:    [ AMSUIAlertDialogTask, AMSUIAuthenticateTask, AMSUICGRectHelper, 
+                       AMSUICodeRedeemerViewController, AMSUIDynamicViewController, 
+                       AMSUISubscriptionsViewController ]
+...

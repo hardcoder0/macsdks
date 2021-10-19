@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           DB474FEE-D07E-3A1D-871F-1CABE7961D77
+install-name:    '/System/Library/PrivateFrameworks/OSAServicesClient.framework/Versions/A/OSAServicesClient'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _OSAServicesClientVersionNumber, _OSAServicesClientVersionString ]
+    objc-classes:    [ OSAServicesClient ]
+...

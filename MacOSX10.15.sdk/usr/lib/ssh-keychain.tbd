@@ -1,0 +1,11 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           099DCA8D-7AB4-31E9-8032-44C70B7E0E3A
+install-name:    '/usr/lib/ssh-keychain.dylib'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _C_GetFunctionList ]
+...

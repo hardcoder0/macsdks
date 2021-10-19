@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           9B2AFA36-F1EF-3E6F-B6B8-3D5A767F9F5B
+install-name:    '/System/Library/PrivateFrameworks/CoreUtilsUI.framework/Versions/A/CoreUtilsUI'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ x86_64-macos ]
+    objc-classes:    [ CUUIEnvironment ]
+...

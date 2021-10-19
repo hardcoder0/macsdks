@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           FFE6F6C1-3204-336B-B95F-E9994C6700AE
+  - target:          x86_64-maccatalyst
+    value:           FFE6F6C1-3204-336B-B95F-E9994C6700AE
+install-name:    '/System/Library/PrivateFrameworks/DeviceCheckInternal.framework/Versions/A/DeviceCheckInternal'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _DCCryptoErrorDomain, _DCFetchErrorDomain, _DeviceCheckInternalVersionNumber, 
+                       _DeviceCheckInternalVersionString, _fallback_server_pubkey ]
+    objc-classes:    [ DCAsset, DCAssetFetcher, DCAssetFetcherContext, DCCertificateGenerator, 
+                       DCCryptoProxyImpl, DCDDeviceMetadata, DCXPCActivityController ]
+...

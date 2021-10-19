@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           4101B1D8-B6A9-3880-A5B9-CAB36761EF21
+install-name:    '/System/Library/PrivateFrameworks/MessageUIMacHelper.framework/Versions/A/MessageUIMacHelper'
+current-version: 3608.120.23
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _CanSendMail, _CreateMailComposeViewControllerHelper, _CreateMessageComposeViewControllerHelper, 
+                       _MFMessageComposeViewControllerAttachmentAlternateFilename, 
+                       _MFMessageComposeViewControllerAttachmentNoAlternateFilename, 
+                       _MFMessageComposeViewControllerAttachmentURL, _MessageUIMacHelperSharingServiceParametersAttachmentDataKey, 
+                       _MessageUIMacHelperSharingServiceParametersAttachmentFileNameKey, 
+                       _MessageUIMacHelperSharingServiceParametersAttachmentMimeTypeKey, 
+                       _MessageUIMacHelperSharingServiceParametersAttachmentsKey, 
+                       _MessageUIMacHelperSharingServiceParametersCcRecipientsKey, 
+                       _MessageUIMacHelperSharingServiceParametersPreferredSendingEmailAddressKey, 
+                       _MessageUIMacHelperSharingServiceParametersToRecipientsKey ]
+    objc-classes:    [ MFMailComposeViewControllerHelper, MFMessageComposeViewControllerHelper, 
+                       MessageUIMacHelperClient ]
+...

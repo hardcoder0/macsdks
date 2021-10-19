@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-maccatalyst
+    value:           0913D6E8-A547-32E6-9969-AC5BA2B9B56F
+install-name:    '/System/iOSSupport/System/Library/Frameworks/CoreAudioKit.framework/Versions/A/CoreAudioKit'
+exports:
+  - targets:         [ x86_64-maccatalyst ]
+    objc-classes:    [ AUAudioUnitRemoteViewController, AUAudioUnitViewConfiguration, 
+                       AUAudioUnitViewService, AUViewController, CABTMIDICentralViewController, 
+                       CABTMIDILocalPeripheralViewController ]
+...

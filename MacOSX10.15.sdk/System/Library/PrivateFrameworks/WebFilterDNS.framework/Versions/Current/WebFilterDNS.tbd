@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           9D4188A6-8A9C-3092-BCDD-09D97F696E96
+install-name:    '/System/Library/PrivateFrameworks/WebFilterDNS.framework/Versions/A/WebFilterDNS'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _LookupNameForAddr, _NameResolvesToAddr, _NameResolvesToName, 
+                       _WCFConnectionDealloc, _WCFConnectionNew, _WCFIsServerRunning, 
+                       _WCFLookupNameForAddr, _WCFNameResolvesToAddr, _WCFNameResolvesToName, 
+                       __WCFIsConnectionValid, __WCFMachPort, __rpcCall_LookupNameForAddr, 
+                       __rpcCall_NameResolvesToAddr, __rpcCall_NameResolvesToName ]
+...

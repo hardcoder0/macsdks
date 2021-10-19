@@ -1,0 +1,9 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-maccatalyst
+    value:           5750BFAA-9C49-3F0C-B220-40BA5F2F9635
+install-name:    '/System/iOSSupport/System/Library/Frameworks/WebKit.framework/Versions/A/Frameworks/SecItemShim.dylib'
+current-version: 609.3.5
+...

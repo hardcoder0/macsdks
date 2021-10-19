@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst, x86_64h-macos, x86_64h-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           6D13D9BA-54EB-3130-8386-E3AD5D858BC0
+  - target:          x86_64-maccatalyst
+    value:           6D13D9BA-54EB-3130-8386-E3AD5D858BC0
+  - target:          x86_64h-macos
+    value:           EAAE8D93-7C00-347A-BF6F-C262557C0A1C
+  - target:          x86_64h-maccatalyst
+    value:           EAAE8D93-7C00-347A-BF6F-C262557C0A1C
+install-name:    '/System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libJP2.dylib'
+exports:
+  - targets:         [ x86_64-macos, x86_64h-macos, x86_64-maccatalyst, x86_64h-maccatalyst ]
+    symbols:         [ __cg_JP2CompressorProcessImage, __cg_JP2CompressorSetDisplayResolution, 
+                       __cg_JP2CompressorSetup, __cg_JP2CompressorTearDown, __cg_JP2DecompressBand, 
+                       __cg_JP2DecompressBlock, __cg_JP2DecompressLayer, __cg_JP2GetDisplayResolution, 
+                       __cg_JP2GetMaxQualityLayers, __cg_JP2GetPalette, __cg_JP2GetTileSize, 
+                       __cg_JP2InitCompressionSettings, __cg_JP2ResetSource, __cg_JP2SetupDecompressor, 
+                       __cg_JP2TearDownDecompressor, __cg_JP2TearDownJP2Storage ]
+...

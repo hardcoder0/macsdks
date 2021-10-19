@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           896F099A-F4DF-3B94-96AF-3B59EADE7EC9
+install-name:    '/System/Library/PrivateFrameworks/SensingProtocols.framework/Versions/A/SensingProtocols'
+current-version: 2
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _BinaryFrameReadFrom, _SensingProtocolsVersionNumber, _SensingProtocolsVersionString ]
+    objc-classes:    [ BinaryFrame ]
+...

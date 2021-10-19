@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           8E6483A5-BF62-3128-9B29-356F65934417
+  - target:          x86_64-maccatalyst
+    value:           8E6483A5-BF62-3128-9B29-356F65934417
+install-name:    '/System/Library/PrivateFrameworks/FontServices.framework/libType1Scaler.dylib'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _T1GetPSFontEncoding, _T1GetSynthesisData, _T1ReleaseSynthesisData, 
+                       _Type1ScalerOpen ]
+...

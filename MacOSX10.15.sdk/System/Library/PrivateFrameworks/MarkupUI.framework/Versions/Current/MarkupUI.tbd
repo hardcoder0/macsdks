@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           A596E8D7-6DBD-3F01-89AD-B296C9D3B61E
+install-name:    '/System/Library/PrivateFrameworks/MarkupUI.framework/Versions/A/MarkupUI'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _MUCropToolEnabled, _MUEncryptPrivateMetadata ]
+    objc-classes:    [ MUCGPDFAnnotationAdaptor, MUContentViewController, MUImageDownsamplingUtilities, 
+                       MUImageView, MUPDFViewBase, MarkupViewController ]
+...

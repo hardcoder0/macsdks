@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           591A5FC1-9B06-357E-BB92-0F31119C39D2
+  - target:          x86_64-maccatalyst
+    value:           591A5FC1-9B06-357E-BB92-0F31119C39D2
+install-name:    '/System/Library/PrivateFrameworks/SafariPlatformSupport.framework/Versions/A/SafariPlatformSupport'
+current-version: 609.3.5
+compatibility-version: 528
+...

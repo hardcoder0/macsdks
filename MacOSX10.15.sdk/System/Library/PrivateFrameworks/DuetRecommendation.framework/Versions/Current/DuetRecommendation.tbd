@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           CF98AE55-89A7-3BB0-B9CA-45EEAE515AB7
+  - target:          x86_64-maccatalyst
+    value:           CF98AE55-89A7-3BB0-B9CA-45EEAE515AB7
+install-name:    '/System/Library/PrivateFrameworks/DuetRecommendation.framework/DuetRecommendation'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _DuetRecommendationVersionNumber, _DuetRecommendationVersionString ]
+    objc-classes:    [ _DRInMemoryTopicInterestModel, _DRPaths, _DRTopicActionEntry, 
+                       _DRTopicEnumerationQuery, _DRTopicInterestModel, _DRTopicInterestSummary, 
+                       _DRTopicStatisticsQuery ]
+...

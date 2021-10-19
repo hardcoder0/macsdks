@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           5300628B-8AD8-3372-A6CE-329D877ABE15
+install-name:    '/System/Library/PrivateFrameworks/ScreenTimeUI.framework/Versions/A/ScreenTimeUI'
+current-version: 440
+allowable-clients:
+  - targets:         [ x86_64-macos ]
+    clients:         [ ChatKit, ContactsUI, DataDetectorsViewDebug, DataDetectorsViewService, 
+                       FaceTime, FaceTimeNotificationCenterService, IMCore, LockoutUI, 
+                       Messages, Messages Assistant Extension, Messages Share Extension, 
+                       ParentalControls, QuickLookUI, QuickLookUIService, Safari, 
+                       SafariShared, SafariSharedUnitTests, ScreenTimeViewService ]
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _STNotificationKeyPINSuccess, _STRestrictionsPINControllerDidFinishNotification ]
+    objc-classes:    [ STLockoutRestrictionsPINController, STLockoutViewController, 
+                       STPINAuthenticationViewController, STPINSetupViewController ]
+...

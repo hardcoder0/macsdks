@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           960CBEEB-565F-38C6-8C6E-95DF37C2F4F8
+  - target:          x86_64-maccatalyst
+    value:           960CBEEB-565F-38C6-8C6E-95DF37C2F4F8
+install-name:    '/usr/lib/libffi-trampolines.dylib'
+current-version: 26
+allowable-clients:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    clients:         [ '!' ]
+...

@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           9747D170-7C41-3FDD-8B49-1F2639A88535
+  - target:          x86_64-maccatalyst
+    value:           9747D170-7C41-3FDD-8B49-1F2639A88535
+install-name:    '/System/Library/PrivateFrameworks/iAdServices.framework/Versions/A/iAdServices'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _ADBKSApplicationStateDescription, _ADClientGlobalStateChangedNotification, 
+                       _ADClientSegmentDataErrorDomain, _ADDefaultsBundleID, _ADErrorDomain, 
+                       _ADInternalErrorCode, _ADInternalErrorDomain, _ADInternalServerFailureCode, 
+                       _ADLocationPermissionCacheURL, _ADLogBarrier, _ADMakeCacheSubdirectory, 
+                       _ADPlaceholderAccountID, _ADSerialWorkQueueName, _ADSessionUnexpectedCloseError, 
+                       _ADShouldProxyRequestToHost, _ADWebViewProxyURLSchemeHTTP, 
+                       _ADWebViewProxyURLSchemeHTTPS, _AdServicesDaemonIdentifier, 
+                       _AdServingDaemonCacheCapacity, __ADLog, _isInternalInstall, 
+                       _kADVideoAdvertisingIdentifier, _kADVideoURLSchemeHTTP, _kADVideoURLSchemeHTTPS, 
+                       _kADViewDefaultHeight, _kADViewDefaultWidth ]
+    objc-classes:    [ ADAdActionPublicAttributes, ADAdImpressionPublicAttributes, 
+                       ADAdServingDaemonConnection, ADAdSpaceConfiguration, ADAdSpaceEventInfo, 
+                       ADDefaults, ADDeviceInfo, ADMRAIDAction, ADSInternalPoint, 
+                       ADSInternalRect, ADSInternalSize, ADSerialWorkQueue, ADServiceUtilities ]
+...

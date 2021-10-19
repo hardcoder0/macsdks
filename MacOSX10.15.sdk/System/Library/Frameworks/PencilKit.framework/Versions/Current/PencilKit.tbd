@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           95301D00-CE35-3F53-BAE1-6E6217706702
+install-name:    '/System/Library/Frameworks/PencilKit.framework/Versions/A/PencilKit'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _PKAppleDrawingTypeIdentifier, _PKAppleStrokeSelectionTypeIdentifier, 
+                       _PKAttachmentViewDefaultDrawingWidth, _PKClipperScaling, _PKInkBlueComponentProperty, 
+                       _PKInkColorProperty, _PKInkGreenComponentProperty, _PKInkIdentifierCharcoal, 
+                       _PKInkIdentifierEraser, _PKInkIdentifierFountainPen, _PKInkIdentifierLasso, 
+                       _PKInkIdentifierMarker, _PKInkIdentifierMicronPen, _PKInkIdentifierObjectEraser, 
+                       _PKInkIdentifierPen, _PKInkIdentifierPencil, _PKInkOpacityProperty, 
+                       _PKInkRedComponentProperty, _PKInkTypeMarker, _PKInkTypePen, 
+                       _PKInkTypePencil, _PKInkVariantDefault, _PKInkVariantThick, 
+                       _PKInkWeightProperty, _PKInputPointZero, _PKToolIdentifierRuler, 
+                       __PKStrokePointZero, _kUTTypeAppleDrawing, _kUTTypeAppleStrokeSelection ]
+    objc-classes:    [ PKCanvasView, PKDrawing, PKEraserTool, PKFatStroke, PKImageCompare, 
+                       PKImageRenderer, PKIndexableContent, PKInk, PKInkBehavior, 
+                       PKInkFeatheringDescriptor, PKInkFunction, PKInkParticleDescriptor, 
+                       PKInkProperties, PKInkRenderingDescriptor, PKInkSmoothingDescriptor, 
+                       PKInkingTool, PKLRUCache, PKLassoTool, PKLegacyDrawingRegressionTester, 
+                       PKLinedPaper, PKMutableStroke, PKReplicaManager, PKSearchQueryItem, 
+                       PKStroke, PKStrokeDelta, PKStrokeProvider, PKStrokeProviderSlice, 
+                       PKStrokeSelection, PKTextAttachmentDrawingView, PKTitleQuery, 
+                       PKTitleQueryItem, PKTool, PKUndoCommand, PKVisualizationManager ]
+...

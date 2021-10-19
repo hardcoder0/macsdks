@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           20ED4B1B-D86A-3368-9AB5-B62ECF86842F
+  - target:          x86_64-maccatalyst
+    value:           20ED4B1B-D86A-3368-9AB5-B62ECF86842F
+install-name:    '/System/Library/Frameworks/Speech.framework/Versions/A/Speech'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    objc-classes:    [ SFAcousticFeature, SFSpeechAudioBufferRecognitionRequest, 
+                       SFSpeechRecognitionRequest, SFSpeechRecognitionResult, SFSpeechRecognitionTask, 
+                       SFSpeechRecognizer, SFSpeechURLRecognitionRequest, SFTranscription, 
+                       SFTranscriptionSegment, SFVoiceAnalytics, _SFSearchRequest, 
+                       _SFSearchResult ]
+...

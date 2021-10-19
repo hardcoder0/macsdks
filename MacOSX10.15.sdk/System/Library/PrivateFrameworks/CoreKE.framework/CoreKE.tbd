@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           FA508D52-2589-32ED-9BBB-A59DF2F081B8
+flags:           [ not_app_extension_safe ]
+install-name:    '/System/Library/PrivateFrameworks/CoreKE.framework/CoreKE'
+current-version: 5.2
+compatibility-version: 1.7
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _IWvA5fm4IwMS88oQXDANCS, _JY0DfiUyFiVcNw89R4t ]
+...

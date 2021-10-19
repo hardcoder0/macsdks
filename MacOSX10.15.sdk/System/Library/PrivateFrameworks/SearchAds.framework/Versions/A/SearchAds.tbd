@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           3478F467-8BC8-3FD1-BB52-65F51A2BE643
+install-name:    '/System/Library/PrivateFrameworks/SearchAds.framework/Versions/A/SearchAds'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _SearchAdsVersionNumber, _SearchAdsVersionString ]
+    objc-classes:    [ ADDataObject, ADInstallAttributionData, ADLocationManager, 
+                       ADResponseData, ADSearchAdsSettings, ADSearchObject, ADSearchSession ]
+...

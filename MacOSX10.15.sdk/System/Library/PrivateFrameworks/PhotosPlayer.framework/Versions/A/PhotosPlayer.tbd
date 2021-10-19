@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           975FE6C9-C2E4-330B-B9F6-01C67C68C997
+install-name:    '/System/Library/PrivateFrameworks/PhotosPlayer.framework/Versions/A/PhotosPlayer'
+current-version: 161.0.120
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _ISCircularEaseOut, _ISCubicEaseOut, _ISLivePhotoShouldRenderAtPlaybackTime, 
+                       _ISQuadraticEaseOut, _ISQuarticEaseOut, _ISQuinticEaseOut, 
+                       _ISSineEaseOut, _ISStringFromPlaybackState, _ISStringFromPlayerItemLoadingTarget, 
+                       _ISVideoAnalyzerErrorDomain, _PhotosPlayerErrorDomain ]
+    objc-classes:    [ ISAVPlayer, ISAVPlayerLayer, ISAnimatedImage, ISAnimatedImagePlayer, 
+                       ISAnimatedImageView, ISAsset, ISBasePlayer, ISBasePlayerNSView, 
+                       ISEditSession, ISExportDestination, ISFrameCache, ISFrameProcessingRequest, 
+                       ISLivePhotoNSView, ISLivePhotoPlaybackFilter, ISLivePhotoPlayer, 
+                       ISObservable, ISPlaybackSettings, ISPlayerContent, ISPlayerItem, 
+                       ISPlayerItemChef, ISPlayerOutputContent, ISRootSettings, ISScrollViewVitalityController, 
+                       ISSettings, ISTouchLivePhotoPlaybackFilter, ISVideoAnalyzer, 
+                       ISVideoPlayerNSView, ISVisibilityOffsetHelper, ISVitalitySettings, 
+                       ISWrappedAVAudioSession, ISWrappedAVPlayer ]
+...

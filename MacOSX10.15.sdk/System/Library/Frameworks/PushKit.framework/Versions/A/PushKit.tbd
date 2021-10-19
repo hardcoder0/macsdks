@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           AD547A25-1A0B-3FA6-8676-82C37F267A4A
+  - target:          x86_64-maccatalyst
+    value:           AD547A25-1A0B-3FA6-8676-82C37F267A4A
+install-name:    '/System/Library/Frameworks/PushKit.framework/Versions/A/PushKit'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _PKPushIncomingCallReportedNotification, _PKPushTypeFileProvider, 
+                       _PKPushTypeUserNotifications ]
+    objc-classes:    [ PKPushCredentials, PKPushPayload, PKPushRegistry, PKUserNotificationsRemoteNotificationServiceConnection ]
+...

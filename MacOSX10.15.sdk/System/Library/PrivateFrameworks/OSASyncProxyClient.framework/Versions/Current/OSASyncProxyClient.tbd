@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           2109F3A5-BC6C-3CD1-8603-E1545B7FB2D6
+  - target:          x86_64-maccatalyst
+    value:           2109F3A5-BC6C-3CD1-8603-E1545B7FB2D6
+install-name:    '/System/Library/PrivateFrameworks/OSASyncProxyClient.framework/Versions/A/OSASyncProxyClient'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _OSASyncProxyClientVersionNumber, _OSASyncProxyClientVersionString ]
+    objc-classes:    [ OSASyncProxyClient ]
+...

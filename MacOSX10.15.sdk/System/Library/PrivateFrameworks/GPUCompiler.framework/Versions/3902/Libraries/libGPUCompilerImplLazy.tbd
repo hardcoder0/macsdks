@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           BE448022-E93F-3B59-A696-AA26E90E6BB5
+  - target:          x86_64-maccatalyst
+    value:           BE448022-E93F-3B59-A696-AA26E90E6BB5
+install-name:    '/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/3902/Libraries/libGPUCompilerImplLazy.dylib'
+current-version: 902.14.11
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ ___clang_metalfe_GPUCompiler_compileFromSourceToBufferWrapper, 
+                       ___clang_metalfe_GPUCompiler_compileFromSourceWrapper, ___clang_metalfe_GPUCompiler_linkToBufferWrapper, 
+                       ___clang_metalfe_GPUCompiler_linkWrapper ]
+...

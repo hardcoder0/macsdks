@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           C1D24684-AB11-3DF4-AEDC-1C31F47DF6CF
+  - target:          x86_64-maccatalyst
+    value:           C1D24684-AB11-3DF4-AEDC-1C31F47DF6CF
+install-name:    '/System/Library/CoreServices/Encodings/libCyrillicConverter.dylib'
+current-version: 76
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ ___CFStringEncodingGetCyrillicConverterDefinition ]
+...

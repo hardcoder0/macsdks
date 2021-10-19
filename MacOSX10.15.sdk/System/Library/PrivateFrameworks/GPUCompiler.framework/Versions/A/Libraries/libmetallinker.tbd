@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           159CEABA-54A9-3FED-BD02-0849CBF4D498
+install-name:    '/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/A/Libraries/libmetallinker.dylib'
+current-version: 0
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _MTLOptimizeUsedListForFunctionConstants, _MTLRemoveUnusedFunctionConstantsFromUsedList ]
+...

@@ -1,0 +1,37 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           8361DAC2-D94F-32C4-913D-CE8933B10B73
+install-name:    '/System/Library/Frameworks/PhotosUI.framework/Versions/A/PhotosUI'
+current-version: 161.0.120
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _PHProjectCategoryBook, _PHProjectCategoryCalendar, _PHProjectCategoryCard, 
+                       _PHProjectCategoryOther, _PHProjectCategoryPrints, _PHProjectCategorySlideshow, 
+                       _PHProjectCategoryUndefined, _PHProjectCategoryWallDecor, 
+                       _PHProjectTypeUndefined, _PUBoundingRectForPoints, _PUEditingInitialPayloadTypeIdentifier, 
+                       _PUErrorDomain, _PULineDistanceBetweenPoints, _PULineDistanceToPoint, 
+                       _PULineIntersection, _PUPointApplyPerspectiveTransform, _PUPointIsOnLineSegmentBetweenPoints, 
+                       _PUProjectExtensionPointIdentifier, _PUQuadApplyPerspectiveTransform, 
+                       _PUQuadApplyScaleFactor, _PUQuadContainsPoint, _PUQuadContainsRect, 
+                       _PUQuadForRect, _PUQuadGetBoundingRect, _PUQuadGetCentroid, 
+                       _PUQuadImageCreate, _PUQuadScaleFactorToFillRect, _PURectContainsPoint, 
+                       _pu_dispatch_on_main_queue ]
+    objc-classes:    [ PHEditingExtensionContext, PHEditingRemoteViewController, 
+                       PHEditingServiceViewController, PHExtensionHostViewPreferredSizes, 
+                       PHExtensionRemoteViewController, PHExtensionServiceViewController, 
+                       PHLivePhotoBadge, PHLivePhotoView, PHProjectAssetElement, 
+                       PHProjectElement, PHProjectExtensionContext, PHProjectExtensionRemoteViewController, 
+                       PHProjectInfo, PHProjectJournalEntryElement, PHProjectMapElement, 
+                       PHProjectMapElementAnnotation, PHProjectRegionOfInterest, 
+                       PHProjectSection, PHProjectSectionContent, PHProjectTextElement, 
+                       PHProjectTypeDescription, PHProjectTypeDescriptionSourceClient, 
+                       PHProjectTypeDescriptionSourceInvalidatorProxy, PHProjectTypeDescriptionSourceService, 
+                       PHProjectTypeDescriptionStaticDataSource, PUEditingExtensionHostContext, 
+                       PUEditingExtensionUndoAdapter, PUEditingExtensionUndoProxyExtensionSide, 
+                       PUEditingExtensionUndoProxyHostSide, PUEditingInitialPayload, 
+                       PUPerspectiveTransformVideoCompositionInstruction, PUPerspectiveTransformVideoCompositor, 
+                       PUProjectExtensionHostContext ]
+...

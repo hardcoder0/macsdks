@@ -1,0 +1,40 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-maccatalyst
+    value:           DF86C213-6EFD-3973-8BE9-ED8C92ECC48E
+install-name:    '/System/iOSSupport/System/Library/Frameworks/StoreKit.framework/Versions/A/StoreKit'
+exports:
+  - targets:         [ x86_64-maccatalyst ]
+    symbols:         [ _SKCloudServiceCapabilitiesDidChangeNotification, _SKCloudServiceSetupActionSubscribe, 
+                       _SKCloudServiceSetupMessageIdentifierAddMusic, _SKCloudServiceSetupMessageIdentifierConnect, 
+                       _SKCloudServiceSetupMessageIdentifierJoin, _SKCloudServiceSetupMessageIdentifierPlayMusic, 
+                       _SKCloudServiceSetupOptionsActionKey, _SKCloudServiceSetupOptionsAffiliateTokenKey, 
+                       _SKCloudServiceSetupOptionsCampaignTokenKey, _SKCloudServiceSetupOptionsITunesItemIdentifierKey, 
+                       _SKCloudServiceSetupOptionsMessageIdentifierKey, _SKDownloadTimeRemainingUnknown, 
+                       _SKErrorDomain, _SKReceiptPropertyIsExpired, _SKReceiptPropertyIsRevoked, 
+                       _SKReceiptPropertyIsVolumePurchase, _SKStoreProductAppleCampaignParsec, 
+                       _SKStoreProductParameterAdNetworkAttributionSignature, _SKStoreProductParameterAdNetworkCampaignIdentifier, 
+                       _SKStoreProductParameterAdNetworkIdentifier, _SKStoreProductParameterAdNetworkNonce, 
+                       _SKStoreProductParameterAdNetworkTimestamp, _SKStoreProductParameterAdvertisingPartnerToken, 
+                       _SKStoreProductParameterAffiliateToken, _SKStoreProductParameterAppleCampaignIdentifier, 
+                       _SKStoreProductParameterCampaignIdentifier, _SKStoreProductParameterCampaignToken, 
+                       _SKStoreProductParameterHighlightedITunesItemIdentifier, _SKStoreProductParameterITunesItemIdentifier, 
+                       _SKStoreProductParameterProductIdentifier, _SKStoreProductParameterProviderToken, 
+                       _SKStoreProductParameterQToken, _SKStorefrontCountryCodeDidChangeNotification, 
+                       _SKStorefrontIdentifierDidChangeNotification, _SKTerminateForInvalidReceipt, 
+                       _SKUIServiceNavigationOptionBackButtonHidden, _SKUIServiceNavigationOptionBackButtonTitle, 
+                       _SKUIServiceNavigationOptionRightButtonEnabled, _SKUIServiceNavigationOptionRightButtonStyle, 
+                       _SKUIServiceNavigationOptionRightButtonTitle, _SKUIServiceNavigationOptionTitle, 
+                       _SKUIServiceReviewSandboxMode, __SKCloudServiceSetupOptionsAudioAccessorySerialNumberKey, 
+                       __SKCloudServiceSetupOptionsAudioAccessoryUniqueDeviceIdentifierKey ]
+    objc-classes:    [ SKAdNetwork, SKArcadeService, SKCloudServiceController, SKCloudServiceSetupConfiguration, 
+                       SKCloudServiceSetupExtension, SKCloudServiceSetupReloadContext, 
+                       SKCloudServiceSetupViewController, SKDownload, SKInGameAnalytics, 
+                       SKMutablePayment, SKPayment, SKPaymentDiscount, SKPaymentQueue, 
+                       SKPaymentQueueClient, SKPaymentTransaction, SKProduct, SKProductDiscount, 
+                       SKProductSubscriptionPeriod, SKProductsRequest, SKProductsResponse, 
+                       SKPurchaseIntent, SKReceiptRefreshRequest, SKRequest, SKStoreProductViewController, 
+                       SKStoreReviewController, SKStorefront ]
+...

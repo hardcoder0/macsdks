@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           20349EDE-AF81-361B-8CEE-27B3888BEC18
+install-name:    '/System/Library/PrivateFrameworks/PSNormalizer.framework/Versions/A/Libraries/libICC.dylib'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _ICCConvertData, _ICCDisposeProfile, _ICCDisposeTransform, 
+                       _ICCGetProfileData, _ICCGetProfileSpec, _ICCInitDISTICCUTILS, 
+                       _ICCMakeProfile, _ICCMakeTransform, _ICCTerminate ]
+...

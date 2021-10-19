@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           0A82ED75-4D48-3ADC-B889-4670CAD1F593
+install-name:    '/System/Library/Frameworks/VideoDecodeAcceleration.framework/Versions/A/VideoDecodeAcceleration'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _VDADecoderCreate, _VDADecoderDecode, _VDADecoderDestroy, 
+                       _VDADecoderFlush, _kVDADecoderConfiguration_Height, _kVDADecoderConfiguration_SourceFormat, 
+                       _kVDADecoderConfiguration_Width, _kVDADecoderConfiguration_avcCData, 
+                       _kVDADecoderConfiguration_forceSW, _myVTOutputCallback, _mykVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder ]
+...

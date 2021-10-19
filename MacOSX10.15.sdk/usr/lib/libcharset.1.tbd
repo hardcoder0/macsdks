@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           72447768-9244-39AB-8E79-2FA14EC0AD33
+  - target:          x86_64-maccatalyst
+    value:           72447768-9244-39AB-8E79-2FA14EC0AD33
+install-name:    '/usr/lib/libcharset.1.dylib'
+current-version: 2
+compatibility-version: 2
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _libcharset_set_relocation_prefix, _locale_charset ]
+...

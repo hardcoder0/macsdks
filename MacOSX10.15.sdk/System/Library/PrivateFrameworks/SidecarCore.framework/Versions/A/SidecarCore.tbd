@@ -1,0 +1,34 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           469E5222-A5C7-3B09-B617-EDB6E9E46B93
+  - target:          x86_64-maccatalyst
+    value:           469E5222-A5C7-3B09-B617-EDB6E9E46B93
+install-name:    '/System/Library/PrivateFrameworks/SidecarCore.framework/Versions/A/SidecarCore'
+current-version: 209.40.4
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _SidecarBundle, _SidecarDeviceGeneration, _SidecarDevicesChangedNotification, 
+                       _SidecarDiagnose, _SidecarDisplayManagerConnectedDevicesChangedNotification, 
+                       _SidecarDisplayManagerPreferencesChangedNotification, _SidecarErrorDomain, 
+                       _SidecarGetProcessUniqueID, _SidecarLocalizedString, _SidecarMessageCreateMutable, 
+                       _SidecarMessageGetDefaults, _SidecarMessageGetDictionaryRepresentation, 
+                       _SidecarMessageGetItemData, _SidecarMessageGetRequestID, _SidecarMessageGetServiceName, 
+                       _SidecarMessageGetTransferID, _SidecarMessageGetType, _SidecarMessageSetDefaults, 
+                       _SidecarMessageSetItemData, _SidecarMessageSetItemMetaData, 
+                       _SidecarMessageSetRequestID, _SidecarMessageSetServiceName, 
+                       _SidecarMessageSetTransferID, _SidecarMessageSetType, _SidecarOptOutOfReconnect, 
+                       _SidecarPDFDefaultPageRect, _SidecarPDFJPEGCompression, _SidecarPasteboardInfoType, 
+                       _SidecarRegisterServicePresenter, _SidecarRegisterServiceProvider, 
+                       _SidecarServiceNameAnnotation, _SidecarServiceNameDisplay, 
+                       _SidecarServiceNameMarkupDisplay, _SidecarServiceNameScanDocument, 
+                       _SidecarServiceNameSignature, _SidecarServiceNameSketch, _SidecarServiceNameTakePhoto, 
+                       _SidecarServicePresenterReady, _SidecarServiceProviderReady, 
+                       _kUTType_iPadPro, _makeDeviceIdentifierMap ]
+    objc-classes:    [ SidecarDebugRequest, SidecarDevice, SidecarDisplayConfig, 
+                       SidecarDisplayManager, SidecarItem, SidecarPasteboardInfo, 
+                       SidecarRequest, SidecarResponse, SidecarService, SidecarSession, 
+                       SidecarStream ]
+...

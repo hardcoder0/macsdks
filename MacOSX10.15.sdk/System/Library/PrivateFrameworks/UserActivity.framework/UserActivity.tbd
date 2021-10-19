@@ -1,0 +1,48 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           6FA20E0C-4C5C-3354-A389-22DBA288B9E3
+  - target:          x86_64-maccatalyst
+    value:           6FA20E0C-4C5C-3354-A389-22DBA288B9E3
+install-name:    '/System/Library/PrivateFrameworks/UserActivity.framework/Versions/A/UserActivity'
+current-version: 358
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _UAAlwaysAdvertise, _UABestAppSuggestionManagerServiceName, 
+                       _UAContinuityErrorDomain, _UAResumableActivitiesManagerServiceName, 
+                       _UASharedPasteboardAUXServiceName, _UASharedPasteboardControllServiceName, 
+                       _UASharedPasteboardManagerServiceName, _UAUserActivityAdvertisePriority, 
+                       _UAUserActivityAlwaysEligibleKey, _UAUserActivityAlwaysPickKey, 
+                       _UAUserActivityAutoPullActivitiesListKey, _UAUserActivityEligibleEvenWhenInBackgroundKey, 
+                       _UAUserActivityHasWebPageURLOptionKey, _UAUserActivityIsForPairedDeviceOptionKey, 
+                       _UAUserActivityIsHighPriorityOptionKey, _UAUserActivityIsNotificationOptionKey, 
+                       _UAUserActivityItemIsNotActiveKey, _UAUserActivityManagerActivityContinuationIsEnabledChangedNotification, 
+                       _UAUserActivityStreamsPayload, _UAUserActivityTypeNowPlaying, 
+                       _UAUserActivityTypeSiri, _UAUserActivityTypeTeamIDOverideKey, 
+                       _UAUserActivityUserInfoPayload, _UActivityCreationXPCServiceName, 
+                       __LSGetBestAppSuggestionManagerProtocolInterface, __LSGetBestAppSuggestionManagerResponseProtocolInterface, 
+                       __LSGetResumableActivitiesAdministrativeProtocolInterface, 
+                       __LSGetResumableActivitiesSysdiagnoseSupportProtocolInterface, 
+                       __LSGetUserActivityClientProtocolInterface, __LSGetUserActivityClientResponseProtocolInterface, 
+                       __LSUserActivityContainsFileProviderURLKey, __LSUserActivityContainsUnsynchronizedCloudDocsKey, 
+                       __LSUserActivityOptionInvalidateAfterFetchKey, __UABestAppSuggestionChangedNotification, 
+                       __UACopyPackedDataForObject, __UACopyPackedDataForObjectWithSubstitution, 
+                       __UACopyUnpackedObjectFromData, __UACopyUnpackedObjectFromDataWithSubstitution, 
+                       __UAGetSharedPasteboardAUXProtocolInterface, __UAGetSharedPasteboardControllProtocolInterface, 
+                       __UAGetSharedPasteboardManagerProtocolInterface, __UAGetSharedPasteboardManagerResponseProtocolInterface, 
+                       __UAUserActivityContainsCloudDocsKey, __UAUserActivityContainsFileProviderURLKey, 
+                       __UAUserActivityContainsUnsynchronizedCloudDocsKey, __UAUserActivityContentAttributeSetPayloadKey, 
+                       __UAUserActivityDidContinueToAppStoreApplicationIdentifierKey, 
+                       __UAUserActivityDidContinueToAppStoreNotification, _kUACanModifyAnySuggestedActionEntitlement, 
+                       _kUADynamicUserActivitesPreferences, _kUADynamicUserActivitiesKey, 
+                       _kUADynamicUserActivityAppActivityKey, _kUADynamicUserActivityDynamicActivityKey, 
+                       _kUADynamicUserActivityHashKey, _kUADynamicUserActivityTeamIDKey, 
+                       _kUAIsDefaultFrontmostAppEntitlement ]
+    objc-classes:    [ UABestAppSuggestion, UABestAppSuggestionManager, UAPasteboardDataProvider, 
+                       UAPasteboardGeneration, UAPasteboardItem, UAResumableActivitiesControlManager, 
+                       UASharedPasteboard, UASharedPasteboardInfo, UASharedPasteboardItemInfo, 
+                       UASharedPasteboardManager, UASharedPasteboardTypeInfo, UAUserActivity, 
+                       UAUserActivityInfo, UAUserActivityManager ]
+...

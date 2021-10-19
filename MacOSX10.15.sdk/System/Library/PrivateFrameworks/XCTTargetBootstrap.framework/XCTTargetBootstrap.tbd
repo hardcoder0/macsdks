@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           4D2C7B80-3DE8-30BD-A6F0-D59C5E8F91D9
+  - target:          x86_64-maccatalyst
+    value:           4D2C7B80-3DE8-30BD-A6F0-D59C5E8F91D9
+install-name:    '/System/Library/PrivateFrameworks/XCTTargetBootstrap.framework/Versions/A/XCTTargetBootstrap'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _XCTDispatchAssertQueue, _XCTDispatchAssertQueueNot, _XCTSetSharedDaemonConnectionProvider, 
+                       _XCTSharedDaemonConnectionProvider, _XCTTBDefaultLog, _XCTTargetBootstrap, 
+                       _XCTUnderlyingErrorsKey ]
+    objc-classes:    [ XCTDaemonConnectionProvider, XCTTargetSession ]
+...

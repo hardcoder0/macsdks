@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           FF243987-DF02-3BF3-BB7B-524EEF626B76
+  - target:          x86_64-maccatalyst
+    value:           FF243987-DF02-3BF3-BB7B-524EEF626B76
+install-name:    '/System/Library/Frameworks/AdSupport.framework/Versions/A/AdSupport'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    objc-classes:    [ ASIdentifierManager ]
+...

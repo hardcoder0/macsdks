@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           DDE64FD4-9DA0-3E7E-B44E-27E06F4A0DBC
+  - target:          x86_64-maccatalyst
+    value:           DDE64FD4-9DA0-3E7E-B44E-27E06F4A0DBC
+install-name:    '/usr/lib/swift/libswiftContacts.dylib'
+current-version: 0
+swift-abi-version: 7
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ '$ld$install_name$os10.10$@rpath/libswiftContacts.dylib', 
+                       '$ld$install_name$os10.11$@rpath/libswiftContacts.dylib', 
+                       '$ld$install_name$os10.12$@rpath/libswiftContacts.dylib', 
+                       '$ld$install_name$os10.13$@rpath/libswiftContacts.dylib', 
+                       '$ld$install_name$os10.14$@rpath/libswiftContacts.dylib', 
+                       '$ld$install_name$os10.9$@rpath/libswiftContacts.dylib', '_$sSC11CNErrorCodeLeV8ContactsE15affectedRecordsSayyXlGSgvg', 
+                       '_$sSC11CNErrorCodeLeV8ContactsE15affectedRecordsSayyXlGSgvpMV', 
+                       '_$sSC11CNErrorCodeLeV8ContactsE25affectedRecordIdentifiersSaySSGSgvg', 
+                       '_$sSC11CNErrorCodeLeV8ContactsE25affectedRecordIdentifiersSaySSGSgvpMV', 
+                       '_$sSC11CNErrorCodeLeV8ContactsE8keyPathsSaySSGSgvg', '_$sSC11CNErrorCodeLeV8ContactsE8keyPathsSaySSGSgvpMV', 
+                       '__swift_FORCE_LOAD_$_swiftContacts' ]
+...

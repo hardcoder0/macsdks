@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           28C5DA1E-5995-354D-978C-4B06BE646F35
+  - target:          x86_64-maccatalyst
+    value:           28C5DA1E-5995-354D-978C-4B06BE646F35
+install-name:    '/System/Library/PrivateFrameworks/iWorkXPC.framework/Versions/A/iWorkXPC'
+current-version: 11
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _iWorkXPCVersionNumber, _iWorkXPCVersionString ]
+    objc-classes:    [ IWXPCFrameworkPlaceholder ]
+...

@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           12AC2ED3-8AD1-3A11-9725-7C19AA3F10FB
+  - target:          x86_64-maccatalyst
+    value:           12AC2ED3-8AD1-3A11-9725-7C19AA3F10FB
+install-name:    '/System/Library/CoreServices/Encodings/libKoreanConverter.dylib'
+current-version: 76
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ ___CFStringEncodingGetKoreanConverterDefinition ]
+...

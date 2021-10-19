@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           15C8F3A5-7361-3379-A880-A6E233E161A6
+  - target:          x86_64-maccatalyst
+    value:           15C8F3A5-7361-3379-A880-A6E233E161A6
+install-name:    '/usr/lib/libAppletTranslationLibrary.dylib'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    objc-classes:    [ AppletTranslator ]
+...

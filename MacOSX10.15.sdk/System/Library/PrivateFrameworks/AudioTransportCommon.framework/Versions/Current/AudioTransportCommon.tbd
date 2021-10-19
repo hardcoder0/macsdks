@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           4B7CE11B-D608-3E4F-9C72-068908665EE3
+install-name:    '/System/Library/PrivateFrameworks/AudioTransportCommon.framework/Versions/A/AudioTransportCommon'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _AudioTransportCommonVersionNumber, _AudioTransportCommonVersionString ]
+    objc-classes:    [ ATCIOA2Device, ATCIOA2Stream, ATCIOA2StreamFormat ]
+...

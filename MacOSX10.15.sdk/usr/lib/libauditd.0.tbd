@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           6B899903-61C7-36E8-AC20-1C2A57C83573
+  - target:          x86_64-maccatalyst
+    value:           6B899903-61C7-36E8-AC20-1C2A57C83573
+install-name:    '/usr/lib/libauditd.0.dylib'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _audit_quick_start, _audit_quick_stop, _auditd_close_dirs, 
+                       _auditd_expire_trails, _auditd_gen_record, _auditd_new_curlink, 
+                       _auditd_prevent_audit, _auditd_read_dirs, _auditd_set_evcmap, 
+                       _auditd_set_fsize, _auditd_set_host, _auditd_set_minfree, 
+                       _auditd_set_namask, _auditd_set_policy, _auditd_set_sflags_masks, 
+                       _auditd_strerror, _auditd_swap_trail ]
+...

@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           A199156E-058D-3ABB-BCE9-4B9F20DCED0F
+  - target:          x86_64-maccatalyst
+    value:           A199156E-058D-3ABB-BCE9-4B9F20DCED0F
+install-name:    '/usr/lib/system/libsystem_coreservices.dylib'
+current-version: 114
+parent-umbrella:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    umbrella:        System
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _NSGetNextSearchPathEnumeration, _NSStartSearchPathEnumeration, 
+                       _NSStartSearchPathEnumerationPrivate, ___user_local_dirname, 
+                       ___user_relative_dirname, __append_relative_path_component, 
+                       __dirhelper, __dirhelper_relative, __get_user_dir_suffix, 
+                       __libcoreservices_fork_child, __set_user_dir_suffix, _sysdir_get_next_search_path_enumeration, 
+                       _sysdir_start_search_path_enumeration, _sysdir_start_search_path_enumeration_private ]
+...

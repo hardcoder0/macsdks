@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           E2FAD8AD-B23A-33E6-A91E-D912E4C4992E
+  - target:          x86_64-maccatalyst
+    value:           E2FAD8AD-B23A-33E6-A91E-D912E4C4992E
+install-name:    '/usr/lib/libMTLCapture.dylib'
+current-version: 266.69.6
+compatibility-version: 1.1
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _DYMTLWrapDeviceWithDebugLayer, _GTHarvesterAddTexturePlane, 
+                       _GTHarvesterGetData, _GTHarvesterGetDataSize, _GTHarvesterGetMetadata, 
+                       _GTHarvesterGetMetadataSize, _GTHarvesterGetTextureMetadataRequiredSize, 
+                       _GTHarvesterGetTexturePlane, _GTHarvesterGetTexturePlaneCount, 
+                       _GTHarvesterInitMetadata, _GTMTLGuestAppClient_initGlobalTransportWithHostURL ]
+...

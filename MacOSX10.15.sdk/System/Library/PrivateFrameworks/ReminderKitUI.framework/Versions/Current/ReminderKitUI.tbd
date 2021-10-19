@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           BA771197-8FEF-37C3-8069-BD2C6DF06F97
+install-name:    '/System/Library/PrivateFrameworks/ReminderKitUI.framework/Versions/A/ReminderKitUI'
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _ReminderKitUIVersionNumber, _ReminderKitUIVersionString ]
+    objc-classes:    [ REMReminderCreationContext, REMReminderCreationRemoteViewController, 
+                       REMReminderCreationViewController ]
+...

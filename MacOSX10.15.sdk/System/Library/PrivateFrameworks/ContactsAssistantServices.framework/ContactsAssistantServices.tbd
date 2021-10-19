@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           956F7AE8-1CFA-340B-9237-F2F0EAB9CD7D
+install-name:    '/System/Library/PrivateFrameworks/ContactsAssistantServices.framework/Versions/A/ContactsAssistantServices'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ x86_64-macos ]
+    symbols:         [ _NonEmptyOrNilArray, _NonEmptyOrNilString, _YESOrNilNumber ]
+    objc-classes:    [ CNAssistantConversion, CNAssistantID ]
+...

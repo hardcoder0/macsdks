@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           FA2EC92C-5509-392F-8E30-FA5BE0D87615
+  - target:          x86_64-maccatalyst
+    value:           FA2EC92C-5509-392F-8E30-FA5BE0D87615
+install-name:    '/System/Library/PrivateFrameworks/Futhark.framework/Versions/A/Futhark'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _FKCCGetRecognitionChar, _FKCCMatchGetConfidence, _FKComponentPrint, 
+                       _FKGetBuildAPIVersion, _FKGetBuildGitHash, _FKGetBuildTimestamp, 
+                       _FKGetFrameworkVersion, _FKPrintLinesegList, _FKPrintRender, 
+                       _FKRecognizeConcomp, _FKSeqMatchGetConfidence, _FutharkVersionNumber, 
+                       _FutharkVersionString ]
+    objc-classes:    [ FKTextCandidate, FKTextDetector, FKTextFeature ]
+    objc-ivars:      [ FKTextDetector._memoryUsage, FKTextDetector._recognizer, FKTextDetector._roi, 
+                       FKTextDetector._sessions, FKTextDetector._size, FKTextDetector._timeBinarizer, 
+                       FKTextDetector._timeConcomps, FKTextDetector._timeDownscale, 
+                       FKTextDetector._timeRecognizer, FKTextDetector._timeSequences, 
+                       FKTextFeature._backingIndex, FKTextFeature._scale, FKTextFeature._session ]
+...

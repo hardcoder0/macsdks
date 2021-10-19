@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst ]
+uuids:
+  - target:          x86_64-macos
+    value:           2F048B23-9D29-3956-9916-018CB1EA665E
+  - target:          x86_64-maccatalyst
+    value:           2F048B23-9D29-3956-9916-018CB1EA665E
+install-name:    '/System/Library/PrivateFrameworks/UsageTracking.framework/Versions/A/UsageTracking'
+current-version: 131
+allowable-clients:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    clients:         [ DeviceManagementTests, PowerlogHelperdOperators, PowerlogLiteOperators, 
+                       RemoteManagementTests, SafariShared, ScreenTime, ScreenTimeAgent, 
+                       ScreenTimeSettingsUI, ScreenTimeTests, ScreenTimeUI, ScreenTimeWebExtension, 
+                       UsageTrackingAgent, dmd, remotemanagementd, usagetool ]
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+    symbols:         [ _USBundleIdentifierQuickLookUIServiceEmbedded, _USBundleIdentifierQuickLookUIServiceMacOS, 
+                       _USDuetClientNameUsageTracking, _USErrorDomain, _USMachServiceNameUsageTracking, 
+                       _USNotificationReceivedValue, _USUsageTrackingVersionNumber, 
+                       _USUsageTrackingVersionString, _usageContextContainsPlayingQuickLookVideo ]
+    objc-classes:    [ USApplicationUsageReport, USBudget, USCategoryUsageReport, 
+                       USDomainNormalization, USTrackingAgentProxy, USUsageMonitor, 
+                       USUsageQuerying, USUsageReport, USUsageReporter, USUsageTrackingBundle, 
+                       USWebHistory, USWebUsageReport, USWebpageUsage ]
+...
